@@ -1,0 +1,899 @@
+/*ACUERDOS EN GRUPO - ESTILOS*/
+
+
+
+/*Reset del margen y del padding*/
+*{margin: 0; padding: 0;}
+
+
+
+h1 {
+
+    font-size: 4em;
+    color: rgb(230, 178, 58);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+
+    color: #fff76a;
+    font-size: 3em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal
+    
+}
+
+
+h3  {
+
+    color: #ffbe6a;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+h4 {
+
+    color: #fff76a;
+    font-size: 1.6em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal
+    
+}
+
+
+
+
+p  {
+
+    color: darkgrey;
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: normal
+    
+}
+
+/*FONDO PARALLAX EN GENERAL*/
+.Parallax {background: white fixed  50% 50%; background-size: cover;  background-repeat: no-repeat; }
+
+/*PARALLAX DEL MENU*/
+#FondoHome {background: url(Img/fiesta-3.jpeg) no-repeat 50% 50% fixed; background-size: cover; width: 100%; height: 114%;  }
+
+
+/*PARALLAX DEL DESARROLLO DE NUESTRO PROYECTO*/
+#Seccion01 {background-image:  url(Img/fiesta\ 3.jpeg)}
+#section02 {background: black; height: 50%;  } /*Color que corta la transcion*/
+#section03 {background-image: url(Img/Fondo_Secion_03.jpeg); height: 265vh; }
+/*Parallax About*/
+
+.parallax {
+  background: fixed no-repeat 50% 50%;
+  background-size: cover;
+
+}
+
+
+#Brandon_Fondo {width: 100%;
+  height: 250vh; background: url(Img/fiesta-3.jpeg) no-repeat 50% 50% fixed ; background-size: cover;}
+
+.Boton_Brandon{width: 80%; height: 9vh; background: green; cursor: pointer; margin-top: 2.5%; text-align: center; display: flex; align-items: center; justify-content: center; transition: 1.5s;}
+.Boton_Brandon:hover {background: goldenrod;}
+.Texto_BotonBR{color: white; transition: 1.5s; }
+.Boton_Brandon:hover .Texto_BotonBR {color: black;}
+
+#seccion1 {
+ background-image: url(Img/tec.jpg);
+ width: 100%;
+ height: 100%;
+ margin: 0%;
+ padding: 0%;
+}
+
+#seccion2 {
+ background-image: url(Img/Fondo_Secion_03.jpg);
+ margin: auto;
+ width: 100%;
+ height: 200vh;
+ margin: 0%;
+ padding: 0%;
+}
+
+#seccion3 {
+ background-image: url(Img/Ultimo_Fondo_Axel.jpeg);
+ color: black;width: 100%;
+ height: auto;
+ margin: 0%;
+}
+
+
+
+
+
+/*APORTAMOS:
+
+- Renzo Blas Cantañeda
+- Fredy Palomino Huamani
+- David Chambilla Obregón
+- Jesus Ramirez De La Cruz
+- Brandon Montiveros Llontop
+*/
+
+
+
+/*FIN DE ACUADOS DE GRUPO*/
+
+
+
+
+
+
+/*MENU*/
+
+/*LOGO*/
+.logo {width: 82px; height: 82px; background: #fff76a;  position: absolute; left: 0%; z-index: 10;  }
+.imagen2 {padding: 6px 6px;}
+
+
+
+/*TABLA EN EL MENU*/
+
+.header { width: 80%; height: 82px; margin-left: 10%; position: fixed;  background: rgb(0, 0, 0); z-index: 1000;}  /*donde se encuentra el menu*/
+
+/*Menu*/
+ul{list-style: none;} /*Los elementos dentro de ul dejan de tener el elemento de lista*/
+.nav> li  {   cursor: pointer; text-align: center; float: left;  } /*Define los contenedores de cada seccion*/
+.nav>li >a{ display: block;  padding: 20.4% 2%;  text-decoration: none; color: white; height: 22px;width: 146px; font-style: italic; transition: 0.4s; } /*Se desarrolla  los botones*/
+.nav>li>a:hover {background: #fff76a; color: black; transition: 0.8s;} /*Se aplica la animacion*/
+.nav {margin-left: 180px; position: relative;} /*Contiene los elementos del menu*/
+/*EFECTO PARA QUE EL SUBMENU APARZCA*/
+.nav .activador:hover .submenu li a {display: block;}
+
+
+
+
+
+.Menu_Responsive {position: fixed ; top: 0%; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.884); z-index: 1000; display: flex
+; justify-content: center; align-items: center; flex-direction: column; display: none;}
+#Cerrar2 {font-size: 50px; color: white; position: absolute; top: 3%; left: 90%; cursor: pointer;} 
+a {color: white; text-decoration: none; }
+/*ICONOS DEL MENU*/
+.iconos {margin-left: 91%; color: white; width: 70px;  font-size: 28px;
+ margin-top: 25px;  z-index: 10; position: absolute; }
+#icono2 {margin-left: 12px;  top: 1.5px; left: 30px; z-index: 10;}
+
+.Texo_Responsive {display: none;}
+.Redes_resposive {display: none;}
+#BEARS {display: none;}
+.Oopciones_resposnsive {text-align: center; font-size: 1.3vw; color: white; }
+.Oopciones_resposnsive:hover {color: #fff76a;}
+h6  {font-family: 'Quicksand', sans-serif; font-size: 3em;}
+
+@media (max-width: 1291px) {
+  .iconos {position: absolute; left: -2%; top: 0%; ;}
+  ul {position: relative; left: 1%;}
+  #contacto {display: none;}
+  .nav>li >a {padding: 23% 0%; width: 130px; }
+  }
+
+  @media (max-width: 1228px) {
+    ul {position: relative; left: -4%;}
+
+    }
+
+@media (max-width: 1134px) {
+  .iconos {position: absolute; left: -2%; top: 0%; width: 20%}
+  ul {position: relative; left: -8%;}
+  }
+
+@media (max-width: 1090px) {
+
+.nav>li >a {padding: 24% 0%; width: 124px; }
+
+
+}
+
+
+@media (max-width: 1074px) {
+.iconos {position: absolute; left: -2%; top: 0%;;}
+ul {position: relative; left: -7%;}
+.nav>li >a {padding: 27.5% 0%; width: 108px; }
+#proyecto {display: flex; align-items: center; justify-content: center;}
+}
+
+@media (max-width: 1023px) {
+.iconos {position: absolute; left: -2%; top: 0%; ;}
+ul {position: relative; left: -7%;}
+#contacto {display: none;}
+#MAS {visibility: visible;}
+.nav>li >a {padding: 27.2% 0%; width: 110px;}
+}
+
+
+@media (max-width: 975px) {
+.iconos {position: absolute; left: -2%; top: 0%; ;}
+ul {position: relative; left: -9%;}
+#contacto {display: none;}
+.nav>li >a {padding: 28.6% 0%; width: 105px;}
+#proyecto {display: flex; align-items: center; justify-content: center;}
+}     
+
+@media (max-width: 913px) {
+  .header {display: flex;}
+.nav>li >a {display: none;}
+#proyecto {display: none;}
+.Texo_Responsive {display: block; font-size: 1em; color: white; position: absolute; top: 10%; ;
+left: 15%; }
+
+.iconos {position: absolute; margin-left: 0%; left: 15%; top: 0%; height: 70% ; display: flex; align-items: center;
+font-size: 24px; width: auto;}
+.Redes_resposive {display: block; font-size: 0.5em; padding-right: 5%; color: white; font-family: sans-serif;}
+.DOS_ICONOS {display: flex;}
+#BEARS {display: block; font-size: 1.7em; color: white;  cursor: pointer;
+ position: absolute; left: 88%; top: 30%;}
+}
+
+@media (max-width: 880px) {
+  .Texo_Responsive {display: block; font-size: 1em; color: white; position: absolute; top: 10%; ;
+    left: 17%; }
+    
+    .iconos {position: absolute; margin-left: 0%; left: 17%; top: 0%; height: 70% ; display: flex; align-items: center;
+    font-size: 24px; width: auto;}
+}
+
+
+
+
+
+
+/*TEXTO PRINCIPAL DEL HOME*/
+
+.parte01 {text-align: center; top: 30px; position: absolute ;   width: 870px; z-index: 2; }
+.parte02 { position: absolute; left: 170px; top: 115px; z-index: 2;}
+.parte03{ position: absolute; left: 450px; top: 115px}
+.parte04 {position: absolute; top: 231px; left: 320px}
+.parte05 {position: relative; margin-top: 330px; text-align: center;}
+.FondoTexto { width: 870px; height: 450px; background: rgba(0, 0, 0, 0.5); margin: 0 auto; margin-top: 25px; position: absolute;  z-index: 0;  left: 0; right: 0; margin: auto; top: 120px;}
+
+/*DISEÑO DEL BOTON*/
+
+.contenedorboton {width: 198px; height: 68px; background: #fff76a; border: 2px solid #fff76a; text-align: center;  top: 533px; position: absolute; color: black; cursor: 
+    pointer; text-align: center; font-weight: 700; left: 0; right: 0; margin: auto;}
+
+.transfromadorboton:hover .contenedorboton {background: transparent; color: #fff76a; transition: 0.8s;}
+/*FIN DE LA PAGINA HOME*/
+
+
+
+
+
+/*PAGINA DE DESARROLLO DE NUESTRO PROYECTO---------------------------------------------------------------------------------------------------------------------*/
+
+/*Titulo central*/
+.tituloprincipal {text-align: center; position: relative; top: 19vh; padding-bottom: 10vh;}
+
+/*FONDO DEL CONTENIDO CENTRAL*/
+.fondodelosvideos {width: 1100px; height: 800px; background: rgba(0, 0, 0, 0.7); margin: 0 auto; margin-top: 120px;}
+
+/*SUBTITULO DEL CONTENEDOR*/
+.subtituloctn {color: #fff76a; text-align: center; position: relative; top: 100px; font-size: 35px;}
+
+/*VIDEOS DEL CONTENEDOR*/
+.video01 {position: relative; top: 180px; left: 30px;}
+
+.video02 {position: relative ; top: 183px; left: 80px;}
+
+/*TITULAR DEL PRIMER VIDEO*/
+.titulardelvideo01 { margin-top: 220px; margin-left: 170px;}
+/*TITULAR DEL SEGUNDO VIDEO*/
+.titularvideo02 { margin-top: -42px; margin-left: 570px; text-align: center;}
+/*CONTENEDOR DEL TEXTO DESCRIPTIVO */
+.contenedordeltexto {width: 500px; height: 100px;  margin-left: 20px; }
+/*TEXTO*/
+.contenidotexto {text-align: center; margin-top: 20px;}
+/*CONTENEDOR DEL TEXTO DESCRIPTIVO 2*/
+.contenedordeltexto2{width: 500px; height: 100px;  margin-left: 580px;}
+/*TEXTO2    */
+.contenidotexto2{text-align: center; margin-top: -100px;}
+ 
+/*FIND DE LA PRIMERA PARTE*/
+
+
+/*COMIENZO DE HERRAMIENTAS*/
+
+.titulosherramientas {text-align: center;   font-size: 60px; position: relative; top: 40px;}
+/*IMAGENES*/
+.tamañodelasimagenes {width: 350px; }
+.imagenz {width: 120px;  transition: 1s;}
+.imagenz:hover {transition: 1s;-webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d; }
+/*TITULO DENTRO DE LAS IMAGENES*/
+.titulardelasimagenes {width: 350px; }
+/*FONDO DE LA SECCION HERRAMIENTAS*/
+.fondodelasherramientas {margin-top: 0px; background:rgba(0, 0, 0, 0.7); width: 100%;}
+.titulointegrantes {text-align: center; margin-top: 130px; font-size: 40px;}
+#Axel {position: relative; margin-left: 130px; width: 380px;}
+#Fredy {width: 460px; position: relative; left: 220px;}
+#Brandon {position: relative; left: -70px; top: 250px; }
+.fondodelcontenedorintegrantes{background: rgba(0, 0, 0, 0.5); height: 100vh; position: relative; top: 4vh; }
+/*SECCNCION FINAL - PARTE 1  (CIRCULOS CON EFECTO)*/
+/*Titulo*/
+.nv_aprenizajez {margin-top: -500px; position: absolute; margin-left: 60px; width: 500px; height: 230px; background: rgba(0, 0, 0, 0.4);}
+/*Configuracion general*/
+.circulos {width: 250px; height: 250px; overflow: hidden; border-radius: 50%; position: relative;}
+.contenedor_de_los_circulos {margin-top: -0px;  width: 250px; height: 250px; border-radius: 50%;
+ background: rgba(0, 0, 0, 0.5); z-index: 12; position: absolute; text-align: center;   
+ word-wrap: break-word; display: none ;}
+.texto_circulos{margin-top: 40px; left: 32px;}
+.imagenes{width: 480px; margin-left: -80px;}
+
+/*EFECTO HOVER CON IMAGENES*/
+.efecto:hover .contenedor_de_los_circulos {display: table ;}
+
+.circulo2 {position: absolute; margin-top: -1vh; margin-left: 100px; display: table}
+.circulo3{margin-top: -1vh; margin-left: 500px; position: absolute; display: table;}
+.circulo4{margin-top: -1vh; margin-left: 900px; position: relative; width: 0%; display: table;}
+
+
+.contenedordeintegrantes {width: 1200px;  height: 100; margin: auto; margin-left: 100px;}
+.integrantes {float: left; width: 380px;  margin-top: 80px; margin-left: 120px; text-align: center;  position: relative; }
+
+
+
+
+
+
+
+
+
+/*AXEL ABOUT PART 2------------------------------------------------------------------------------------*/
+
+
+
+header {
+    
+    width: 480px;
+    margin: 0 auto;
+  }
+ul {
+    list-style: none;
+  }
+#menu li>a {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+  }
+#menu li>a:hover {
+    color: rgb(185, 34, 34);
+    background-color: #eaeaea;
+  }
+#menu>li {
+    float: left;
+    text-align: center;
+  }
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;}
+
+
+
+
+
+
+.testimonio {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 1200px;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 15px;
+    margin: auto;
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 20VH;
+  }
+  
+  #seccion2 {
+    background-image: url(Img/Fondo_Secion_03.jpg);
+    margin: auto;
+    width: 100%;
+    height: 200vh;
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  .galeria {
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: table;
+  }
+  
+  .titulo {
+      display: table-cell;
+      vertical-align: middle;
+  }
+  
+  .tabla {
+      margin-top: 80px;
+  }
+  
+  .imagen {
+    height: 200px;
+    width: 256px;
+  }
+  
+  .imagen:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.3)
+  }
+  
+  .info {
+    position: absolute;
+    height: 200px;
+    width: 256px;
+    background-color: rgb(31, 31, 31, 0.9);
+    -webkit-transition: opacity 0.2s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .imagen:hover .info {
+    opacity: 1;
+  }
+  
+  
+
+  
+  #uno {
+    background: url(Img/1.jpg) no-repeat 50% 50% ; background-size: cover;
+  }
+  
+  #dos {
+    background: url(Img/2.jpg) no-repeat 50% 50% ; background-size: cover;
+  }
+  
+  #tres {
+    background: url(Img/3.jpg)  no-repeat 50% 50% ; background-size: cover;
+  }
+  
+  #cuatro {
+    background: url(Img/4.jpg)  no-repeat 50% 50% ; background-size: cover; 
+  }
+  
+  #cinco {
+    background: url(Img/5.jpg) no-repeat 50% 50% ; background-size: cover; ;
+  }
+  
+  #seis {
+    background: url(Img/6.jpg)  no-repeat 50% 50% ; background-size: cover;
+  }
+  
+  #siete {
+    background: url(Img/7.jpg)  no-repeat 50% 50% ; background-size: cover;
+  }
+  
+  #ocho {
+    background: url(Img/8.jpg)  no-repeat 50% 50% ; background-size: cover;
+  }
+  
+  #nueve {
+    background: url(Img/9.jpg)  no-repeat 50% 50% ; background-size: cover;
+  }
+  
+  #diez {
+    background: url(Img/10.jpg)  no-repeat 50% 50% ; background-size: cover;
+  }
+  
+  #once {
+    background: url(Img/11.jpg)  no-repeat 50% 50% ; background-size: cover;
+  }
+  
+  #doce {
+    background: url(Img/12.jpg) no-repeat 50% 50% ; background-size: cover;
+  }
+  
+  /*Selector simple de ID
+  #título {
+      color: rgb(75, 237, 243);
+      font-size: 2em;
+  }*/
+  
+  /*SELECTOR SIMPLE DE CLASE*/
+  /*p.parafo {
+      color: sandybrown;
+      font-style: italic;
+  }*/
+  
+  /*p.loco {
+      font-size: large;
+      color: rgb(30, 160, 23);
+      font-family: 'Times New Roman', Times, serif;
+  }*/
+  
+  /*p.company {
+    font-size: large;
+    color: azure;
+    font-family: sans-serif;
+  }*/
+  
+  /*section {
+      width: 100%;
+      height: 100%;
+      margin: 0%;
+      padding: 0%;
+  }*/
+  
+
+  
+.imagen {cursor: pointer;}
+  
+  .imagen:hover {
+   transition: 1s; -webkit-transform:scale(1.3);transform:scale(1.3)
+  }
+  
+  .galeria {
+    width: 100%;
+    height: 24%;
+    background-color: black;
+    display: table;
+  }
+  
+  .titulo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .tabla {
+
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    margin-top: 10%;
+
+  }
+  .gif {
+    
+    margin-left: 50%;
+    margin-top: 30vh;
+    width: 40%;
+  }
+  
+  .contenido {
+    width: 500px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    left: 65px;
+    top: -47vh;
+  }
+  .contenido h3 {text-align: center;}
+  
+  .comentario {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .TEXTARES_AXEL{width: 80%; height: 40vh; margin-left: 10%; margin-top: -6%; background: rgba(0, 0, 0, 0.61); border: 3px solid white; color: white;}
+
+.Enviar_Comentarios {width: 80.109%; height: 9vh; margin-left: 10%; margin-top: -0.260%; ; display: flex; justify-content: center; align-items: center; border: 2px solid #fff76a; background: #fff76a; cursor: pointer; transition: 1.4s; }
+.Enviar_Comentarios:hover {background: transparent; color: white; }
+.Comentarios {width: 80%; height: 70vh; background: rgba(0, 0, 0, 0.623); margin: auto; margin-top: 13vh; margin-bottom: 5%; }
+.Comentarios h3 {position: relative; left: 5%; top: 5%;}
+.Comentarios p {text-align: left; padding-left: 7%; padding-right: 7%; margin-top: 4%;}
+.Texto_2_cm {position: relative; top: -5%;}
+  /*RENZO ESTILOS*/
+
+
+  #titulo{
+    color: cornflowerblue;
+    font-size: 3em;
+}/*esto tambien es para darle estilo a las etiquetas que queremos con (id)*/
+
+/*ESTILOS MODAL_ DESARROLLADO BY FREDY*/
+
+#Modal01 {position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.692); position: fixed;
+z-index: 10000; top: 0%; display: flex; justify-content: center; align-items: center;}
+#Cerrar {font-size: 50px; color: white; position: absolute; top: 3%; left: 90%; cursor: pointer;} 
+.Contenedor_modal {width: 70%; height: 80vh; background: black; display: flex; }
+.Modal_img01 {width: 58%; height: 98%; display: flex; 
+flex-direction: column; margin-top: 2%; margin-left: 4%;  }
+
+.Linea {color: white; width: 70%; margin-top: 3%;}
+.Texto01 {color: white; text-align: left; width: 80%; margin-top: 7%;}
+
+.IMG_BOTON {width: 30%; height: 100%; display: flex; align-items: center;  flex-direction: column;}
+.IMG__1 {width: 90%; height: auto; height: 70%; margin-top: 10%;}
+.Boton_Modal {width: 90%; height: 7vh; background: white; color: black; font-family: sans-serif;
+display: flex; justify-content: center; align-items: center; cursor: pointer; margin-top: 14%;}
+
+.Boton_Modal:hover {background: transparent; border: 2px solid white; color: white; transition: 0.7s;}
+
+/* el id solo aplica para llamar a los #*/
+
+
+/*selector simple de clase(class)*/
+p.todotexto {
+    color: darkgrey;
+    font-style: italic;
+    font-family: fantasy;
+}
+
+/*para llamar al estos estilos es con (class)*/
+/* solo afecto en el (p) que queremso*/
+/* p(es la etiqueta de parrafo).todotexto(nombre para llamar el estilo)
+En este caso p.todotexto es para párrafos dado que se lo emos indicado poniendo
+la (p) , si queremos otra etiqueta , solo habria que cambair la p . ejmp 
+podemos poner h1.h2.h3.p etc*/
+
+
+/*estilos CSS libres*/
+
+/* este estilo se lama con (class)*/
+.libre{
+    padding: 15px 35px; /*esto es para dar dimensiones*/
+    text-align: center; /*esto para alineación de texto*/
+
+  /*tipo de letra*/
+}
+
+.otro {
+    position: absolute; 
+    top: 150px;                 /*esto es para h1 de otros servicios*/
+    left: 410px;
+    
+}
+
+/*esto para serivicios1*/
+
+.servicios {
+    overflow: hidden; 
+    width: 100px; 
+    height: 60px;  /*para los div*/
+    float: left;
+}
+
+.lei4 {
+    width: 200px;
+    height: 250px;
+    position: absolute; 
+    top: 330px; 
+    left: 150px;
+}
+
+.m {
+    position: absolute; 
+    top: 600px;            /*para h2*/
+    left: 175px;
+}
+
+.b {
+    position: absolute; 
+    top: 650px;     /*para el p*/
+    left: 160px;
+}
+/*esto para serivicios2*/
+
+.c {
+    position: absolute; 
+    top: 600px;       /*para el h2*/
+    left: 577px;
+}
+
+.d {
+    position: absolute; 
+    top: 650px;        /*para el p*/
+    left: 559px; 
+}
+
+/*esto para serivicios3*/
+
+.e {
+    position: absolute; 
+    top: 600px;       /*para el h2*/
+    left: 980px;
+}
+
+.f {
+    position: absolute; 
+    top: 650px;        /*para el p*/
+    left: 958px;
+}
+/*esto para serivicios4*/
+
+.g {
+    position: absolute; 
+    top: 1120px;       /*para el h2*/
+    left: 199px;
+}
+
+.h {
+    position: absolute; 
+    top:1180px;       /*para el p*/
+    left: 160px;
+}
+/*esto para serivicios5*/
+
+.i {
+    position: absolute; 
+    top: 1120px;      /*para el h2*/
+    left: 587px;
+}
+
+.j {
+    position: absolute; 
+    top: 1180px;     /*para el p*/
+    left: 559px;
+}
+/*esto para serivicios6*/
+
+.k {
+    position: absolute; 
+    top: 1120px;    /*para el h2*/
+    left: 980px;
+}
+
+.l {
+    position: absolute; 
+    top: 1180px;    /*para el p*/
+    left: 960px;
+}
+
+
+.Contenedor_final_renzo{background: rgba(0, 0, 0, 0.7); width: 90%; height: 880px; margin: auto; position: absolute; left: 5%;  top: 400px;}
+.ultimo_recueadro{background: #fff76a; width: 90%; height: 400px; position: absolute; left: 5%; top: 1275px;}
+.mensaje_ultimo{ text-align: center; margin-top: 50px;}
+.Primer_boton{color: white; top: 1560px;  width: 180px; height: 70px; background: black; cursor: pointer; border: 2px solid black; margin-top: 80px; margin-left: 300px;}
+.Primer_boton:hover{color: black; background: transparent; transition: 0.8s;}
+.Segund_Boton{color: black; top: 1560px;  width: 180px; height: 70px;  border: 2px solid black; cursor: pointer; background: #fff76a; margin-left: 160px;}
+.Segund_Boton:hover{background: black; color: white; transition: 0.8s;}
+/*RENZO EFECTO HOVER*/
+
+
+.contenedor {
+  position: relative;
+  left: -2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+} 
+
+.efect {
+  position: absolute;
+  height: 290px;
+  width: 235px;
+  overflow: hidden;
+  border-radius: 4px;  /*forma de borde del contenedor*/
+                        /*box-shadow: 0px 1px 10px rgb(0,0,5); esto es para efecto sombra */
+  cursor: pointer;
+}
+
+.otro {
+  position: absolute; 
+  top: 150px;                 /*esto es para h1 de otros servicios*/
+  left: 410px;
+  
+}
+.efect1 {
+  top: 320px; 
+  left: 150px;   /*posición del contenedor*/
+}
+
+.efect2 {
+  left: 550px;
+  top: 320px; 
+}
+.efect3 {
+  left: 947px;
+  top: 320px; 
+}
+.efect4 {
+  left: 150px;
+  top: 830px; 
+}
+.efect5 {
+  left: 550px;
+  top: 830px; 
+}
+.efect6 {
+  left: 947px;
+  top: 830px; 
+}
+.contenedor figure img {
+  width: 100%;
+  height: 100%;                 /*esto para la imagen*/
+  transition: all 500ms ease-out;
+}
+
+.contenedor figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(4, 66, 78, 0.7);   /*efecto de cuando el mouse esat encima*/
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.contenedor figure:hover .capa{
+  opacity: 1;
+  visibility: visible;              /*efecto hover condicionado por capa*/
+}
+
+.contenedor figure:hover .capa h2 {
+  margin-top: 70px;   /*posición dentro de la imágen*/
+  margin-bottom: 15px;  /*espacio despues del título*/
+}
+
+.contenedor figure:hover img {
+  transform: scale(1.3);   /*zoom en la imágen*/
+}
+
+.contenedor figure .capa h2 {
+  font-size: 2em; /*esto es para el tamaño de letra*/
+  color:#fff76a;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 20px;
+}
+
+.contenedor figure .capa p {
+  color: darkgrey;
+  font-size: 1em;
+  line-height: 1.5;  /* esto es el tamaño para separar línea */
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+
+
+/*Jesus --------------------------------------------------------------------------------------------------------*/
+
+.contenedor_titulo_ctn{margin: 0 auto;position: relative;   display: table; margin-top: 30vh;}
+.Fondo_formulario{width: 1000px; height: 1100px; background: rgba(0, 0, 0, 0.6);position:relative; top: 100px;left: 0; right: 0; margin: 0 auto; border: 4px solid rgb(24, 18, 18)}
+.subtitulo_formulario{position: absolute; width: 828px;   display: table;  top: 30px;  left: 60px; right: 0; margin: 0 auto;}
+.referentes{position: relative; margin: 0 auto; display: table; left: 0; right: 0; top: 150px;}
+.inputs_contactos{width: 400px;height: 45px;position: absolute; background: transparent; border: 2px solid white;}
+::placeholder{text-align: center; color: white;}
+.inputs_contactos:hover{border: 2px solid yellow;}
+#input1{top: 400px;left: 60px;}
+#input2{top: 400px;left: 530px;}
+#input3{top: 650px;left: 60px;}
+#input4{top: 650px;left: 530px;}
+#input5{width: 866px; height: 120px; position: absolute; top: 850px; left: 60px;}
+.contenedor_letra1{position: absolute;top:320px;left:200px;}
+.contenedor_letra2{position: absolute;top:0px;left: 460px; width: 240px;}
+.contenedor_letra3{position: absolute;top: 250px;left: -430px;}
+.contenedor_letra4{position: absolute;top: 0px;left: 470px;}
+.primera_letra{font-size: 30px; margin-left: -30px;}
+.segunda_letra{font-size: 30px;}
+.ultimaletra{position: absolute;top: 200px;left: -310px;}
+#tamaño_boton_contactos{width: 868px; top: 202px; left: -330px;}
+.mapa{justify-items: start; align-items: start;   margin-top: 740px; left: 180px; position: absolute;}
+.contenedor_uvicarnos{background: black;  font-size: 20px; width: 100vh; height: 30vh; position: absolute; margin-top: 400px;}
+.texto_uvicarnos{text-align: center; position: relative; top: 66px;}
+.contenedor_mensaje_final{margin-top: 840px; position: absolute; width: 500px; margin-left: -500px;}
+
+
+.Desarrollado {padding: 10px; background: rgba(0, 0, 0, 0.609);
+position: absolute; margin-top: 120px; margin-left: 15px; color: white;}
+
