@@ -1,0 +1,490 @@
+*{margin: 0; padding: 0;}
+
+.header {width: 100%; height: 10vh; background: chartreuse; position: relative; display: flex; 
+ align-items: center; }
+li {width: 60%;}
+.nav {display: flex; list-style: none; position: absolute; width: 60%; height: 100%; left: 24%; }
+.nav>li>a { width: 100%; height: 100%; display: flex; justify-content: center; position: relative;
+align-items: center; cursor: pointer; background: chartreuse; 
+transition: 0.9s;  color: black;  }
+.nav>li>a:hover {background: green; color: white; }
+
+
+.mamiferos:hover #Sumbeni_01 {display: block;}
+.anfibios:hover #Sumbeni_02 {display: block;}
+.Reptiles:hover #Sumbeni_03 {display: block;}
+.Peces:hover #Sumbeni_04 {display: block;}
+.Roedores:hover #Sumbeni_04 {display: block;}
+
+
+
+.submenu { display: none; position: absolute; top: 100%; z-index: 900; width: 20%; height: 70%; list-style: none; }
+.submenu>li {width: 100%; height: 100%;}
+.submenu>li>a {width: 100%; height: 100%;  background: chartreuse;
+display: flex; justify-content: center; align-items: center; text-decoration: none; color: black; transition: 0.9s;}
+.submenu>li>a:hover  {background: green; color: white;}
+
+
+
+
+.imagen2 {position: absolute; left: 90%; }
+.imagen {position: absolute; left: 13%; }
+.titular { font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+ text-align: center; margin-left: 50%; width: 100%;  }
+
+
+
+
+
+
+
+.Fondo {position: absolute; top: 10%; width: 100%; height: 90vh; background:url(img/Fondo.jpeg); background-size: 100% 100%;}
+.textoprincipal { width: 900px; height: 400px; background: rgba(5, 94, 2, 0.5); }
+.textoprincipal h1 {color: white; text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin-top: 25px;}
+.textoprincipal p {color: white; text-align: center; margin-top: 65px; margin-left: 35px; margin-right: 35px;}
+
+
+/*MAMIFEROS*/
+
+.FONDO_MAMIFEROS {position: absolute; top: 10%; width: 100%; height: 90%;  background-size: cover; overflow: hidden;
+display: flex; justify-content: center; align-items: center; background: url(img/MAMIFERO.jpeg) no-repeat 50% 50%; background-size: cover;}
+
+.Contenedor_Mamiferos { width: 1100px; height: 480px; background: rgba(255, 255, 255, 0.4); top: 0px; left: 133px; top: 37.5px;}
+.Contenedor_Mamiferos h1 {text-align: center; color: black; margin-top: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.Contenedor_Mamiferos p {margin-top: 30px; margin-left: 100px; margin-right: 100px; text-align: center;}
+.Contenedor_Mamiferos h2 {text-align: center; margin-top: 20px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+.seccion_felinos {width: 180px; height: 50px; background: url(img/FONDO_PIEL.jpg); background-size: 100% 160%; border: 2px solid black; border-radius: 10px; margin-left: 460px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: black; position: absolute; }
+.seccion_felinos:hover {background: rgba(133, 3, 3, 0.5); color: white;}
+.seccion_antilopes {width: 180px; height: 50px; background: url(img/PIEL_ANTILOPES.jpg); background-size: 140% 160%; border: 2px solid black; border-radius: 10px; margin-left: 800px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: black; position: absolute;}
+.seccion_antilopes:hover {background: rgba(172, 76, 11, 0.5); color: white;}
+.seccion_Marsupiales {width: 180px; height: 50px; background: url(img/PIEL_MARSUPIALES.jpg); background-size: 140% 160%; border: 2px solid black; border-radius: 10px; margin-left: 120px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: black; position: absolute;}
+.seccion_Marsupiales:hover {background: rgba(172, 76, 11, 0.5); color: white;}
+
+/*ANFIBIOS*/
+
+.FONDO_ANFIVIOS {position: absolute; top: 10%; width: 100%; height: 90vh;  overflow: hidden;
+display: flex; justify-content: center; align-items: center; background: url(img/FONDO_ANFIVIOS.jpg) no-repeat 50% 50%; background-size: cover;}
+.Contenedor_ANFIBIOS { width: 1100px; height: 480px; background: rgba(255, 255, 255, 0.4);}
+.Contenedor_ANFIBIOS h1 {text-align: center; color: black; margin-top: 30px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.Contenedor_ANFIBIOS p {margin-top: 30px; margin-left: 100px; margin-right: 100px; text-align: center;}
+.Contenedor_ANFIBIOS h2 {text-align: center; margin-top: 20px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+.seccion_ranas {width: 180px; height: 50px; background: url(img/Ranas.jpg); background-size: 100% 180%; border: 2px solid black; border-radius: 10px; margin-left: 460px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: black; position: absolute; }
+.seccion_ranas:hover {background: rgba(133, 3, 3, 0.5); color: white;}
+.seccion_salamandra {width: 180px; height: 50px; background: url(img/SALAMANDRA.jpg); background-size: 140% 170%; border: 2px solid black; border-radius: 10px; margin-left: 800px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: black; position: absolute;}
+.seccion_salamandra:hover {background: rgba(172, 76, 11, 0.5); color: white;}
+.seccion_SAPOS {width: 180px; height: 50px; background: url(img/Piel_Sapos.jpg); background-size: 160% 160%; border: 2px solid black; border-radius: 10px; margin-left: 120px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: rgb(5, 2, 2); position: absolute;}
+.seccion_SAPOS:hover {background: rgba(172, 76, 11, 0.5); color: white;}
+
+
+/*REPTILES*/
+#Repitles {background: url(img/REPTILES_FONDO.jpeg) no-repeat 50% 50%; background-size: cover;}
+.seccion_iguanas {width: 180px; height: 50px; background: url(img/piel-iguanas.jpg); background-size: 100% 180%; border: 2px solid black; border-radius: 10px; margin-left: 460px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: black; position: absolute; }
+.seccion_iguanas:hover {background: rgba(133, 3, 3, 0.5); color: white;}
+.seccion_cocodrilo {width: 180px; height: 50px; background: url(img/piel-cocodrilo.jpg); background-size: 140% 170%; border: 2px solid black; border-radius: 10px; margin-left: 800px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: black; position: absolute;}
+.seccion_cocodrilo:hover {background: rgba(172, 76, 11, 0.5); color: white;}
+.seccion_serpientes {width: 180px; height: 50px; background: url(img/piel-serpiente.jpg); background-size: 160% 260%; border: 2px solid black; border-radius: 10px; margin-left: 120px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: rgb(5, 2, 2); position: absolute;}
+.seccion_serpientes:hover {background: rgba(172, 76, 11, 0.5); color: white;}
+
+
+/*PESES*/
+
+#Peces_Fondo {background: url(img/Fondo_secciom_Peces.jpeg) no-repeat 50% 50%; background-size: cover;}
+
+.seccion_guppy {width: 180px; height: 50px; background: url(img/piel\ de\ gruppy.jpg); background-size: 100% 180%; background-position: -1px; border: 2px solid black; border-radius: 10px; margin-left: 460px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: black; position: absolute; }
+.seccion_guppy:hover {background: rgba(133, 3, 3, 0.5); color: white;}
+.seccion_carpa {width: 180px; height: 50px; background: url(img/Piel_De_Carpa.jpg); background-size: 140% 170%; border: 2px solid black; border-radius: 10px; margin-left: 800px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: black; position: absolute;}
+.seccion_carpa:hover {background: rgba(172, 76, 11, 0.5); color: white;}
+.seccion_tiburones {width: 180px; height: 50px; background: url(img/Piel_De_Tiburones.jpg); background-size: 100%;  border: 2px solid black; border-radius: 10px; margin-left: 120px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: rgb(5, 2, 2); position: absolute;}
+.seccion_tiburones:hover {background: rgba(172, 76, 11, 0.5); color: white;}
+
+
+/*ROEDORES*/
+
+#Fondo_Roedores {background: url(img/Roedores.jpeg) no-repeat 50% 50%; background-size: cover;}
+
+.seccion_hamster {width: 180px; height: 50px; background: url(img/Hamster.jpg); background-size: 100% 180%; border: 2px solid black; border-radius: 10px; margin-left: 590px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: black; position: absolute;}
+.seccion_hamster:hover {background: rgba(172, 76, 11, 0.5); color: white;}
+.seccion_chinchillas {width: 180px; height: 50px; background: url(img/Chincillas.jpeg); background-size: 100%;  border: 2px solid black; border-radius: 10px; margin-left: 340px ; cursor: pointer; font-family: monospace; font-size: 25px; margin-top: 50px; color: rgb(5, 2, 2); position: absolute;}
+.seccion_chinchillas:hover {background: rgba(172, 76, 11, 0.5); color: white;}
+
+
+/*Estilos compartido para las secciones--------------------------------------------------*/
+
+/*Fondo_Inicial*/
+.Fondo_Top_Principal { top: 10%; width: 100%; height: 90.6vh; display: flex; justify-content: center; align-items: center;}
+/*Titulo del top*/
+.Subtitular {background: #870000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    width: 100%; height: 50vh;  z-index: 10;box-shadow: 0 0 15px rgb(233, 19, 19); display: flex;
+justify-content: center; align-items: center;}
+.Subtitular {color: white; text-align: center; font-size: 40px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*Configuracion de las imagenes y el texto en el top*/
+.Puesto_Num {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative;  }
+.Texto_Num { width: 58%; height: auto; background: rgba(133, 3, 3, 0.5) }
+.Texto_Num h1 {color: white; font-size: 40px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; position: relative; 
+padding-top: 5%; }
+.Texto_Num p {color: white; position: relative; padding-left: 5%; padding-right: 5%;
+    padding-bottom: 5%; }
+.top5 {width: 100%; height: auto;   text-align: center; }
+/*Seccion final*/
+.advertencia {width: 100%; height: 50vh; background: black; display: flex; align-items: center;}
+.reflexion {overflow: hidden; width: 40%; height: 100%; float: right;
+ margin-left: 10%;}
+.CtnMensaje {width: 50%; height: 220px; background: rgba(248, 240, 248, 0.7); margin-left: 5%;}
+.CtnMensaje h1 {color: red; text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+padding-top: 5%;  }
+.CtnMensaje p {padding: 5% 5%;}
+
+
+
+/*Seccion Felinos*/
+#Fondo_Felino {background:url(img/FondoSabana.jpg) no-repeat 50% 50%; background-size: cover;}
+#Fondo_Central_Felinos {background: url(img/FondoTopFelinos.jpg) no-repeat 50% 50% fixed; background-size: cover;}
+#Felino5 img {margin-left: -200px;}
+#Felino3 img {margin-left: -320px;}
+#Felino2 img {margin-left: -240px;}
+#Felino1 img {margin-left: -310px;}
+#Imagen_Final_Felinos {background: url(img/CachorroFelinos.jpg) no-repeat 50% 50%; background-size: cover;}
+
+/*Seccion Antilopez*/
+
+#Fondo_Antilope {background: url(img/Fondo_Antilopes.jpg) no-repeat 50% 50%; 
+background-size: cover;}
+#Fondo_Central_Antilopez {background: url(img/Fondo_Antilopez_Original.jpg) no-repeat 50% 50% fixed;
+background-size: cover;}
+#Antilope5 img {margin-left: -290px;}
+#Antilope4 img {margin-left: -380px;}
+#Antilope1 img {margin-left: -170px;}
+#Imagen_Final_Nimpala {background: url(img/Advertencia_Antilopes.jpg) no-repeat 50% 50%; 
+    background-size: cover;}
+
+/*SECCION MARSUPIALES*/
+
+#Fondo_Marsupiales {background:url(img/Fondo_Marsupiales.jpg) no-repeat 50% 50%; background-size: cover;}
+#Fondo_Central_Marsupiales {background: url(img/Fondo_Marsupiales_TOP5Pexel.jpeg) no-repeat 50% 50% fixed; background-size: cover;}
+#Amtilope5 img {margin-left: -290px;}
+#Marsupiales3 img {margin-left: -100px;}
+#Marsupiales2 img {margin-left: -240px;}
+#Imagen_Final_Marsupiales {background: url(img/IMAGEN-ADVETENCIA-MARSUPIALES.jpg) no-repeat 50% 50%; background-size: cover;}
+
+
+/*SECCION SAPOS */
+
+#Fondo_SAPOS {background:url(img/Fondo_sapos_seccion.jpeg) no-repeat 50% 50%; background-size: cover;}
+#Fondo_Central_Sapos {background: url(img/Pantano.jpg) no-repeat 50% 50% fixed; background-size: cover;}
+#Subtitular_Sapos {background: #3CA55C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
+    box-shadow: 0 0 15px rgb(6, 85, 6); color: green;}
+
+#Sapos5 img {margin-left: -350px;}
+#Sapos3 img {margin-left: 00px;}
+#Sapo2 img {margin-left: -40px;}
+#Imagen_Final_Sapos {background: url(img/Renacuajos.jpg) no-repeat 50% 50%; background-size: cover;}
+
+.Texto_Num2 { width: 58%; height: auto; background: rgba(41, 233, 51, 0.5) }
+.Texto_Num2 h1 {color: black; font-size: 40px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; position: relative; 
+padding-top: 5%; }
+.Texto_Num2 p {color: black; position: relative; padding-left: 5%; padding-right: 5%;
+    padding-bottom: 5%; }
+
+/*SECCION RANAS*/
+
+#Fondo_ranas {background:url(img/Fondo_Ranas.jpeg) no-repeat 50% 50%; background-size: cover;}
+#Fondo_Central_Ranas{background: url(img/Ranas_Fondotop.jpeg) no-repeat 50% 50% fixed; background-size: cover;}
+
+#Ranas5 img {margin-left: -420px;}
+#Ranas3 img {margin-left: -80px;}
+#Ranas2 img {margin-left: -400px;}
+
+#Imagen_Final_Ranas {background: url(img/Advertencia_Ranas.jpg) no-repeat 50% 50%; background-size: cover;}
+
+
+
+
+/*SALAMANDRAS*/
+#Fondo_salamandras {background:url(img/Montañas_Apalachas.jpeg) no-repeat 50% 50%; background-size: cover;}
+#Fondo_Central_Salamadnras{background: url(img/Fondo_Top_Salamandras.jpeg) no-repeat 50% 50% fixed; background-size: cover;}
+
+#Imagen_Final_Salamandras {background: url(img/SALAMANDRA_ADVEERTENCIAAA.jpg) no-repeat 50% 50%; background-size: cover;}
+#Salamandra5 img {margin-left: -440px;}
+#Salamandra3 img {margin-left: -10px;}
+#Salamadra2 img {margin-left: -200px;}
+#Salamandra1 img {margin-left: -200px;}
+
+
+
+    /*SECCION SERPIENTE*/
+    #Primer_Fondo_Serpientes {background: url(img/serpientes_fondo.jpeg) no-repeat 50% 50%;
+    background-size: cover;}
+    #Fondo_Serpiente_Top_5 {background: url(img/Serpiente_Top_5.png) no-repeat 50% 50% fixed;
+    background-size: cover;}
+    #Relfexion_Serpientes {background: url(img/serpientes\ recien\ nadicas.jpg) no-repeat 50% 50%;
+    background-size: cover;}
+
+    .Subtitular_Reptiles {background: #f12711;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */          
+        width: 100%; height: 50vh;  z-index: 10;box-shadow: 0 0 15px rgb(233, 19, 19); display: flex;
+    justify-content: center; align-items: center;}
+
+    .Subtitular_Reptiles {color: #000000; text-align: center; font-size: 40px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #Reptiles_PRINCIPAL {background: #f12711a1;}
+
+    .Texto_Num3 { width: 58%; height: auto; background: #f12711a1 }
+    .Texto_Num3 h1 {color: white; font-size: 40px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; position: relative; 
+    padding-top: 5%; }
+    .Texto_Num3 p {color: white; position: relative; padding-left: 5%; padding-right: 5%;
+    padding-bottom: 5%; }
+
+    /*IGUANAS SECCION*/
+    .Fondo_Top_Principal {background: url(img/Fondo_Iguana.jpeg) no-repeat 50% 50%;
+    background-size: cover;}
+    #Top_5_Iguana {background: url(img/Fondo_Top5_Iguanas.jpeg) no-repeat 50% 50% fixed;
+    background-size: cover;}
+
+    #Reflexion_Iguanas {background: url(img/Iguna_Advertencia.jpg) no-repeat 50% 50%;
+    background-size: cover;}
+
+    /*COCODRILO_SECCION*/
+
+    #Cocodrilo_Principal_Top {background: url(img/Fondo_Cocodrilo.jpg) no-repeat 50% 50%;
+    background-size: cover;}
+    #Fondo_Senccion_Top_Cocodrilo {background: url(img/Cocodrilo_Fondo_Top.jpeg) no-repeat 50% 50% fixed;
+    background-size: cover;}
+
+    #Reflexion_Cocodrilo{background: url(img/Cocodrilo_Advertencia.jpg) no-repeat 50% 50%;
+    background-size: cover;}
+    /*INICIO DE LA SECCION COCODRILO*/
+
+
+    .top5_Cocodrilo {width: 1366px; height: 3400px; background: url(img/Cocodrilo_Fondo_Top.jpeg); background-size: 100% 140%; margin-top: 790px; text-align: center; background-attachment: fixed;}
+
+
+
+    .Cocodrilo5 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: 130px; left: 40px; }
+    .Cocodrilo5 img {margin-left: -440px; margin-top: 0px;}
+
+
+    .Cocodrilo4 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -130px; left: 890px; }
+    .Cocodrilo4 img {margin-left: -200px; margin-top: -10px;}
+
+
+    .Cocodrilo3 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -380px; left: 40px; }
+    .Cocodrilo3 img {margin-left: -110px; margin-top: -70px;}
+
+
+    .Cocodrilo2  {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -660px; left: 890px; }
+    .Cocodrilo2 img {margin-left: -50px;}
+
+
+    .Cocodrilo1 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -860px; left: 40px; }
+    .Cocodrilo1 img {margin-left: -360px; }
+
+    .reflexion_Cocodrilos {overflow: hidden; width: 600px; height: 300px; margin-left: 765px;}
+    .reflexion_Cocodrilos img {margin-left: -50px; margin-top: -0px;}
+
+
+
+    /*INICIO DE LA SECCION PECES: PAICHES*/
+
+
+    .Subtitular_Tiburones {background: #00d2ff;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */           
+        width: 1366px; height: 300px; top: 620px; z-index: 10; position: absolute;box-shadow: 0 0 15px rgb(20, 41, 228);}
+    .Subtitular_Tiburones h1 {color: rgb(0, 87, 158); text-align: center; font-size: 80px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top: 50px;
+    }
+
+
+    .top5_Tiburones {width: 1366px; height: 3400px; background: url(img/Fondo_Top_5_Tiburones.jpeg); background-size: 100% 140%; margin-top: 790px; text-align: center; background-attachment: fixed;}
+
+
+
+    .Tiburones5 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: 130px; left: 40px; }
+    .Tiburones5 img {margin-left: -240px; margin-top: 0px;}
+
+
+    .Tiburones4 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -130px; left: 890px; }
+    .Tiburones4 img {margin-left: -200px; margin-top: -10px;}
+
+
+    .Tiburones3 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -380px; left: 40px; }
+    .Tiburones3 img {margin-left: -350px; margin-top: 0px;}
+
+
+    .Tiburones2  {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -660px; left: 890px; }
+    .Tiburones2 img {margin-left: -50px;}
+
+
+    .Tiburones1 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -860px; left: 40px; }
+    .Tiburones1 img {margin-left: -260px; }
+
+    .Tiburones_Cocodrilos {overflow: hidden; width: 600px; height: 300px; margin-left: 765px;}
+    .Tiburones_Cocodrilos img {margin-left: -50px; margin-top: -0px;}
+
+
+    .reflexion_Tiburones {overflow: hidden; width: 600px; height: 300px; margin-left: 765px;}
+    .reflexion_Tiburones img {margin-left: -50px; margin-top: -100px;}
+
+
+    /*INCIO DE LA SECCION GUPPY*/
+
+
+
+    .Subtitular_Guppy {background: #3CA55C;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #B5AC49, #3CA55C);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #B5AC49, #3CA55C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
+        width: 1366px; height: 300px; top: 620px; z-index: 10; position: absolute;box-shadow: 0 0 15px rgb(6, 85, 6);}
+    .Subtitular_Guppy h1 {color: rgb(4, 99, 16); text-align: center; font-size: 80px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top: 50px;
+    }
+
+    .top5_Guppy {width: 1366px; height: 3400px; background: url(img/Gupppy_Top5.jpg); background-size: 100% 140%; margin-top: 790px; text-align: center; background-attachment: fixed;}
+
+    
+
+
+    .Guppy5 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: 130px; left: 40px; }
+    .Guppy5 img {margin-left: -90px; margin-top: 0px;}
+
+
+    .Guppy4 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -130px; left: 890px; }
+    .Guppy4 img {margin-left: -200px; margin-top: -10px;}
+
+
+    .Guppy3 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -380px; left: 40px; }
+    .Guppy3 img {margin-left: -120px; margin-top: 0px;}
+
+
+    .Guppy2  {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -660px; left: 890px; }
+    .Guppy2 img {margin-left: -300px;}
+
+
+    .Guppy1 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -860px; left: 40px; }
+    .Guppy1 img {margin-left: -460px; }
+
+    .Tiburones_Cocodrilos {overflow: hidden; width: 600px; height: 300px; margin-left: 765px;}
+    .Tiburones_Cocodrilos img {margin-left: -50px; margin-top: -0px;}
+
+
+    .reflexion_Guppy {overflow: hidden; width: 600px; height: 300px; margin-left: 765px;}
+    .reflexion_Guppy img {margin-left: -50px; margin-top: -100px;}
+
+
+
+
+    /*INICIO SECCION CARPA*/
+
+    .Fondo_Carpas {position: absolute; top: 70px; width: 1366px; height: 555px; overflow: hidden;}
+    .Fondo_Carpas img {margin-left: -310px; margin-top: -120px;}
+    .top5_Carpas {width: 1366px; height: 3400px; background: url(img/Carpa_Top5.jpg); background-size: 100% 130%; margin-top: 790px; text-align: center; background-attachment: fixed;}
+
+
+
+    .Carpa5 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: 130px; left: 40px; }
+    .Carpa5 img {margin-left: -160px; margin-top: 0px;}
+
+
+    .Carpa4 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -130px; left: 890px; }
+    .Carpa4 img {margin-left: -200px; margin-top: -10px;}
+
+
+    .Carpa3 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -380px; left: 40px; }
+    .Carpa3 img {margin-left: -480px; margin-top: -100px;}
+
+
+    .Carpa2  {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -660px; left: 890px; }
+    .Carpa2 img {margin-left: -300px;}
+
+
+    .Carpa1 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -860px; left: 40px; }
+    .Carpa1 img {margin-left: -60px; }
+
+    .Tiburones_Cocodrilos {overflow: hidden; width: 600px; height: 300px; margin-left: 765px;}
+    .Tiburones_Cocodrilos img {margin-left: -50px; margin-top: -0px;}
+
+
+    .reflexion_Guppy {overflow: hidden; width: 600px; height: 300px; margin-left: 765px;}
+    .reflexion_Guppy img {margin-left: -50px; margin-top: -100px;}
+
+
+
+    /*INICIA DE SECCION CHINCHILLA*/
+
+    .Subtitular_Roedores {background: #f12711;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                               
+        width: 1366px; height: 300px; top: 620px; z-index: 10; position: absolute;box-shadow: 0 0 15px rgb(214, 124, 20);}
+    .Subtitular_Roedores h1 {color: rgb(255, 255, 255); text-align: center; font-size: 80px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top: 50px;
+    }
+
+    .top5_Roedores {width: 1366px; height: 3400px; background: url(img/Chinchilla_Top_5.jpg); background-size: 100% 130%; margin-top: 790px; text-align: center; background-attachment: fixed;}
+    .Fondo_Chinchilla {position: absolute; top: 70px; width: 1366px; height: 555px; overflow: hidden;}
+    .Fondo_Chinchilla img {margin-left: -310px; margin-top: -220px;}
+
+
+
+    .Chinchilla5 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: 130px; left: 40px; }
+    .Chinchilla5 img {margin-left: -320px; margin-top: 0px;}
+
+
+    .Chinchilla4 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -130px; left: 890px; }
+    .Chinchilla4 img {margin-left: -100px; margin-top: 0px;}
+
+
+    .Chinchilla3 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -380px; left: 40px; }
+    .Chinchilla3 img {margin-left: -280px; margin-top: -100px;}
+
+
+    .Chinchilla2  {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -660px; left: 890px; }
+    .Chinchilla2 img {margin-left: -100px;}
+
+
+    .Chinchilla1 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -860px; left: 40px; }
+    .Chinchilla1 img {margin-left: -300px; }
+
+
+    .reflexion_Chinchilla {overflow: hidden; width: 600px; height: 300px; margin-left: 765px;}
+    .reflexion_Chinchilla img {margin-left: -50px; margin-top: -50px;}
+
+
+    /*ROEDORES HAMSTER*/
+
+
+
+    .top5_Roedores02 {width: 1366px; height: 3400px; background: url(img/Hamster_Fondo_Top5.jpg); background-size: 100% 130%; margin-top: 790px; text-align: center; background-attachment: fixed;}
+    .Fondo_Hamster {position: absolute; top: 70px; width: 1366px; height: 555px; overflow: hidden;}
+    .Fondo_Hamster img {margin-left: -310px; margin-top: -520px;}
+
+
+
+    .Hamster5 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: 130px; left: 40px; }
+    .Hamster5 img {margin-left: -360px; margin-top: 0px;}
+
+
+    .Hamster4 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -130px; left: 890px; }
+    .Hamster4 img {margin-left: -240px; margin-top: 0px;}
+
+
+    .Hamster3 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -380px; left: 40px; }
+    .Hamster3 img {margin-left: -380px; }
+
+
+    .Hamster2  {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -660px; left: 890px; }
+    .Hamster2 img {margin-left: -40px;}
+
+
+    .Hamster1 {width: 400px; height: 500px; overflow: hidden; background: wheat; position: relative; top: -860px; left: 40px; }
+    .Hamster1 img {margin-left: -370px; }
+
+
+    .reflexion_Hamster {overflow: hidden; width: 600px; height: 300px; margin-left: 765px;}
+    .reflexion_Hamster img {margin-left: -50px; margin-top: -50px;}
