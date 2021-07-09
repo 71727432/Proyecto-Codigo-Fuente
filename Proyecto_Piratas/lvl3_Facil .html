@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>Practica-01</title>
+</head>
+<body>
+    <!--MENU-->
+
+        <div class="Header" >
+            <h1>EN BUSCA DEL TESORO</h1>
+
+            <ul class="Lista">
+                <a href="index.html"><li>NIVEL 01</li></a>
+                <a href="lvl2_Facil.html" ><li >NIVEL 02</li></a>
+                <a href="lvl3_Facil .html"><li style="background: black; color: white;">NIVEL 03</li></a>
+
+    </div>
+
+<section class="Primera_SRC" style="height: auto;">
+
+
+
+    <div class="Primera_Seccion_DRC">
+
+    </div>
+    <h1 class="Preparadolvl2" style="margin-top: 15%;">¿PREPARADO PARA EL MAYOR RETO?</h1><br><br><br><br>
+    <div style="display: flex;">
+    <div class="Contenedor_Juego" >
+
+        <div class="Contenedor_lvl3 Cabezera_lvl3" >
+            <div class="Tiempo">
+                <h4>Tiempo:</h4>
+                <span id="Tiempo">26</span>
+            </div>
+        
+            <div class="Puntos">
+                <h4>Puntos</h4>
+                <span id="Puntos">0 / 44</span>
+            </div>
+        </div>
+
+        <div class="Contenedor_lvl3" >
+            <div class="INCIO" id="INCIO">
+                <div id="INICIO_BORRAR">
+                <h2>¿LISTO PARA ENCONTRAR<br> EL TESORO?</h2><br>
+                <div style="display: flex; align-items: center; justify-content: center; ">
+                <img src="IMG/Bandera_Pirata.jpg" width="100px">&nbsp;<h1 style="font-family: 'Press Start 2P', cursive;">--></h1>&nbsp;<img src="IMG/Tesoro_Inicio.png" width="100px">
+                </div><br>
+                <button  class="Boton_Start" id="JUGAR_ARRANQUE">JUGAR</button>
+                </div>
+                <span id="Conteo"></span>
+            </div>
+
+            <div class="Pantalla_Ganaste" id="Pantalla_Ganaste">
+                <h1 style="font-family: 'Press Start 2P', cursive; font-size: 30px; color: rgb(13, 71, 13); text-align: center;">FELICIDADES JUGADOR LOGRASTE<br> PASAR EL NIVEL <br><br><span style="color: black; font-family: 'Press Start 2P', cursive; font-size: 20px;">AHORA PUEDES IR AL <br>SIGUIENTE  NIVEL</span></h1>
+            </div>
+
+            <img src="IMG/Cofre_del_tesoro.gif" width="60px" class="Tesoro" id="Tesoro">
+        </div>
+    
+    </div>
+
+    <audio src="Efectos_de_sonido/Coins_Emptying_Hand_01_Sound_Effect_Mp3_328 (2).mp3" id="Sonido_Moneda" preload="auto"></audio>
+    <audio src="Efectos_de_sonido/Musca_Piratas.mp3" id="Fondo_Musical"  preload="auto" loop></audio>
+
+</div>
+    
+<div style="display: flex; margin: 4%; justify-content: center; align-items: center;
+width: 100%; height: 20%;">
+<div class="Dificultad_lvl2" style="margin-right: 5%;">
+    DIFICULTAD : POLLITO (FACIL)<br><br>
+    <div style="display: flex; justify-content: center; align-items: center;">  
+    <img src="IMG/Pollo.gif" width="50px">  
+    &nbsp;<span>SUERTE!</span>&nbsp;
+    <img src="IMG/Pollo.gif" width="50px">
+    </div>
+</div>
+
+<div class="Ventajas"  >
+    <h3>VENTAJAS DE JUGARLO</h3><br>
+    <p>Este juego te ayudara a aumentar tu capacidad de atencion, y te retara
+        en cada nivel haciendo cada vez mas dificil encontrar el cofre y obtener los
+        grande premios que este guarda y ahora me toca preguntarte estas dispueste a encontrar
+        todos los cofres, esperamos que si y que logres pasar este juego</p>
+    </div>
+
+    <div class="Reglas" style="margin-left: 3%;">
+        <h3>¿Como jugarlo?</h3><br>
+        <p>En principio tienes un cofre lleno de teosros, tu mision es
+            atrapar los 30 cofres repartidos por el mapa antes de que se 
+            acabe tu tiempo, recuerda que pueden aparecer en cualquier parte 
+            del mapa, asi que mira bien tus alrededores y atrapa a los 30 cofres 
+            antes de que se acabe el tiempo.
+        </p>
+    </div>
+
+<div class="Reloj_lvl2" style="margin-left: 5%;" >
+    <div class="Fechas">
+        <span id="PdiaSemana"></span>&nbsp;
+        <span id="PdiaNumero"></span>&nbsp;
+        <span>de</span>&nbsp;
+        <span id="Pmes"></span>&nbsp;
+        <span>del</span>&nbsp;
+        <span id="Paño"></span>&nbsp;
+    </div>
+
+    <div class="Hora">
+        <span id="PHora"></span>
+        &nbsp;<span>:</span>&nbsp;
+        <span id="PMinutos"></span>
+    
+        <div class="egundos_AMPM"> 
+        <span id="PSegundos"></span>
+        <span id="PAMPM"></span>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+</section>
+</body>
+<script src="Java lvl3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
