@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap" rel="stylesheet">   
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Estilos.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="Header"><h1>¡BIENVENIDO A LA PAGINA DE SORTEOS!</h1></div>
+
+
+<section class="Seccion_Principal">
+
+<div class="Digitar" id="Digitar" >
+<h2 style="margin-top: 8%; color: black; padding-bottom: 4%;" id="Titulo_Form">LLENE LOS DATOS PARA COMENZAR</h2><br><br>
+<div style="display: flex;">
+<div class="Requisitos" id="Requisitos">
+<h3>Digite el numero de<br> participantes</h3><br>
+<input type="number" placeholder="Numero de participantes" class="FORMULARIO" name="Participantes" id="Input_01" required ><br>
+<span id="Resultados" class="Alerta"></span>
+</div>
+
+<div class="Requisitos" id="Requisitos2">
+<h3>Coloque el numero de ganadores</h3><br>
+<input type="number" placeholder="Numero de ganadores" class="FORMULARIO" name="Ganadores" id="Input_02"  required> <br>
+<span id="Resultados2" class="Alerta"></span>
+</div>
+</div>
+<!--INICIO DE LA SECCION 2-->
+
+<div style="display: none; width: 100%; margin-top: -5%;" id="Bloque_2">
+    
+
+    <form name="Tipo_de_Sorteo">
+    <input type="radio" id="Primero_Opcion"  name="Opciones_sorteo" value="1">
+    <input type="radio" id="Primero_Opcion2"  name="Opciones_sorteo" value="2">
+    </form>
+
+
+    <div style="display: flex; flex-direction: column; ">
+
+
+        
+        <h2 style="position: relative; top: 10%; color: black; padding-bottom: 0%;" id="Titular_2FRM">ESCOJA UNA DE LAS OPCIONES</h2><br><br>
+
+<div style="display: flex;" id="Borrar_Opciones">    
+   
+    <label for="Primero_Opcion" class="Opciion_1">
+    <div class="NUMBERONE" id="NUMBERONE"><h3>Por numeros:</h3><br> <p>Esta seccion sortea los datos colocados anteriormente, y muestra los resultados
+    en forma numerica, en caso usted haya colocado un total de 5 participantes, le dara un resultado en ese mismo rango</p></div>
+    </label>
+      
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <label for="Primero_Opcion2" class="Opciion_2">
+    <div class="NUMBERTOWN" id="NUMBERTOWN"><h3>Por Nombre:</h3><br> <p>En esta opcion se le permitira nombrar a cada participante por nombre en base a la cantidad
+    de participantes que coloco anteriormente, mostrando a su vez un resultado mas preciso a la hora de escoger un ganador
+    </p>
+    </label>
+    </div>
+    <!--POR NOOMBRE INICIO-->
+        <div id="Por_Nombres_Titulo">
+        <h2 style="text-align: center; color: black;
+        font-size: 40px;" id="Titulo_Nombres" >Sorteo por nombres de <br> participantes</h2>
+        <h2 style="text-align: center; color: black;
+        font-size: 40px; display: none;" id="GANADOR_NOMBRE">¡EL GANADOR DEL SORTEO ES!</h2><br><br><br>
+        </div>
+        <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+        <span id="Conteo_Nombre" class="Conteo_2"></span>
+        <span id="GANDORESSSS"></span>
+        </div>
+        <div id="Por_Nombre"></div>
+        <input type="submit" id="Boton_Ganador_Nombre" value="Ver el ganador" >
+
+    <!--FIN DE NOMBRE-->
+</div>
+    </div>
+    <div class="Arrancar" id="Arrancar">INICIAR EL SORTEO</div>
+    </div>
+<!--FIN DE LA SECCION 2-->
+<input type="submit" value="SIGUIENTE" class="ENVIAR" id="SORTEO"></input>
+
+
+
+<div style="width: 100%; display: none; align-items: center; flex-direction: column;" id="Inicio_SEC_NUM">
+<h1 style="color: black; font-family: 'Righteous', cursive;">EL AFORTUNADO GANADOR ES !!!</h1>
+<span id="Conteo" class="Conteo"></span>
+<br><br><br><div class="Contenedor_Resultados_Numericos" id="Ganadores_Numeros"> </div><br><br><br>
+
+</div>
+
+</div>
+
+
+<div class="Reglas">
+<h2 style="font-family: 'Saira Condensed', sans-serif;">INSTRUCCIONES DEL SORTEO:</h2><br>
+<p style="line-height: 20px; padding-left: 20px; padding-right: 20px;">Antes de comenzar rellene los datos solicitados en la primera parte 
+Con numeros enteros enteros para evitar confuciones y una vez llene el formulario
+podra darle a INICIAR, para que el sorteo inicie, recuerde a su vez que los resultados
+son aleatorios, le deseamos la mejor suerte para que resulte ganador y esperamos que esta
+herramienta le facilite sus activades, eventos o sorteos</p> <br><br>
+<img src="Sorteo.jpg" width="400px">
+</div>
+</section>
+
+<script src="Java.js"></script>
+</body>
+</html>

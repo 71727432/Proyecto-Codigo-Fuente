@@ -1,0 +1,99 @@
+*{padding: 0; margin: 0; font-family: sans-serif;}
+
+.Header {width: 100%; height: 20vh; display: flex; justify-content: center;
+align-items: center; background: black; color: white;}
+
+.Seccion_Principal {width: 100%; height: auto ; background: url(Loteria.jpg) no-repeat 50% 50% fixed; background-size: cover;
+display: flex; justify-content: center; align-items: center;}
+
+.Reglas {width: 40%; height: 90%; padding-top: 10px; padding-bottom: 10px; background: rgba(0, 0, 0, 0.555);
+color: white; padding-left: 10px; padding-right: 10px; text-align: center; margin-left: 5%;
+margin-top: 5%; margin-bottom: 5%; }
+
+
+.Digitar {width: 45%; height: auto; background: rgba(255, 255, 255, 0.582); display: flex;
+ align-items: center;  color: white; flex-direction: column; 
+margin-top: 5vh; margin-bottom: 5vh;}
+
+.Requisitos {width: 50%; height: 100%; text-align: center;
+float: left; color: black; }
+
+.ENVIAR{ width: 36%; height: 7vh; background: black; border: 3px solid black;
+border-radius: 0.5rem; margin-top: 8%; margin-bottom: 8%; cursor: pointer; color: white;}
+
+.FORMULARIO {width: 70%; height: 4vh; border-radius: 0.4rem; text-align: center; outline: none;
+border: 2px solid black; background: transparent; color: black;}
+
+.Alerta {color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+
+::placeholder {color: black;}
+
+
+.NUMBERONE {background: transparent; border: 2px solid black; color: black; border-radius: 15px; cursor: pointer; width: 200px;
+ transition: 0.4s;}
+.NUMBERONE:hover { transform: scale(1.1); transition: 0.4s;}
+
+.NUMBERONE h3 {
+    padding-left: 15px; padding-right: 15px; padding-top: 15px;
+}
+
+.NUMBERONE p {
+    padding-left: 15px; padding-right: 15px; padding-bottom: 35px;
+}
+
+.Opciion_1 {width: auto; height: auto; }
+
+input[type=radio] {
+    visibility: hidden;
+  }
+
+/*ALTERNATIVA 2*/
+
+.Opciion_2 {width: auto; height: auto;}
+
+.NUMBERTOWN {background: transparent; border: 2px solid black; color: black; border-radius: 15px; cursor: pointer; width: 200px;transition: 0.4s;
+}
+.NUMBERTOWN:hover { transform: scale(1.1); transition: 0.4s;}
+
+.NUMBERTOWN h3 {
+    padding-left: 15px; padding-right: 15px; padding-top: 15px;
+}
+
+.NUMBERTOWN p {
+    padding-left: 15px; padding-right: 15px; padding-bottom: 15px;
+}
+
+.Opciion_1 {display: table;}
+
+
+
+.Arrancar {width: 40%; height: 6vh; color: white; background: black; display: flex; justify-content: center;
+align-items: center; cursor: pointer; border-radius: 8px; margin-top: 5%; margin-bottom: 5%;}
+
+.Conteo{color: black; font-size: 250px; font-family: 'Press Start 2P', cursive;
+margin-top: 15%;}
+
+.Conteo_2{color: black; font-size: 250px; font-family: 'Press Start 2P', cursive;
+padding-bottom: 8%;}
+
+
+.Contenedor_Resultados_Numericos {width: 200px; height: auto; color: black; display: flex;
+    justify-content: center; align-items: center; margin: auto;  word-wrap: break-word;}
+
+
+#Por_Nombre { width: 100%; height: auto; display: flex;
+justify-content: center; align-items: center; flex-direction: column;}
+
+.Resgistre_sus_datos {width: 340px; height: 34px; border-radius: 8px; text-align: center;
+font-size: 14px; outline: none; border: 2px solid black; background: transparent;}
+.Resgistre_sus_datos:hover {border: 2px solid rgb(66, 69, 245) }
+::placeholder {text-align: center;}
+
+
+#Por_Nombres_Titulo {display: none;}
+
+#Boton_Ganador_Nombre {width: 200px; height: 40px; background: black; border: none;
+color: white; outline: none; display: none; cursor: pointer; margin: auto; border-radius: 5px;
+margin-top: 7%; margin-bottom: 7%;}
+
+#GANDORESSSS {color: black; padding-bottom: 8%;}
