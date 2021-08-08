@@ -1,0 +1,230 @@
+body{
+    margin: 0%;
+    font-family: sans-serif;
+    padding: 0%;
+    background: rgb(230, 221, 221);
+}
+
+.Cabezera{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(135deg, #667eeaab 0%, #764ba2ab 100%), url(IMG/Walpaper_INICIO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+
+
+.Registrar_rol{
+    display: flex;  
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;  
+}
+
+
+.Form_2{
+    width: 20%;
+    background: rgb(12, 113, 230);
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.Formulario{
+padding-top: 4%;
+width: 50%;
+height: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+
+.Horrario{
+    width: 100%;
+    background: #4120a3;
+    border-top: 5px solid #5e2feb;
+    border-bottom: 5px solid #5e2feb;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Horrario>h3{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: white;
+    font-weight: 100;
+}
+
+.Estilo_radio{
+    position: absolute;
+    display: none;
+}
+
+.Horrario>ul{
+    list-style: none;
+    width: 70%;
+    margin: 0px 0px 0px 0px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.Cnf_perfil{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+
+.Cnf_perfil:hover{
+
+    background: #5e2feb;
+}
+
+
+
+.Contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.Mensaje_rol{
+    color: white;
+    text-align: left;
+    padding-left: 10%;
+    margin-top: 5%;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+
+
+.Contenedor_roless{
+    background: #0f334b;
+    border: 5px solid #164d72;
+    width: 30%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;    
+}
+
+.Contenedor_roless>h3{
+    padding-left: 7%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding-top: 5%;
+}
+
+.Contenedor_roless>h4{
+    color: white;
+    padding-left: 7%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;    
+}
+
+.Contenedor_roless::-webkit-scrollbar{
+    background: #896da500;
+    -webkit-box-shadow: inset 0 0 5px rgba(72, 13, 148, 0.3);
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #3c0ed3b4; 
+    
+}
+
+
+
+.Lista_perfiles{    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 78%;
+    margin: 0px 0px 0px 0px;
+    margin-left: 7%;
+    margin-top: 2%;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+
+#Icono_delete:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.Roles_texto{
+    margin: 0px 0px 0px 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+.Roles_texto:hover {
+    cursor: pointer;
+    color: yellow;
+}
+
+.Desarrollo_tareas{
+    background: rgb(236, 223, 223);
+    width: 80%;
+    height: 100vh;
+    border-bottom: 10px solid rgb(236, 223, 223);
+}
+
+.Desarrollo_tareas h2{
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+::placeholder{
+    color: rgb(148, 145, 145);
+}
+
+
+.Afirmar_eliminacion{
+    display: none;
+}
+
+.Cnf_perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    transition: 0.9s;
+}
+
+
+
+
+.fas{
+    font-size: 1.2em;
+    padding-left: 8px;
+}
+
+
