@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetLand - Registro adopciones</title>
+    <link rel="icon" href="IMG/Logo_Web.png">
+    
+    <style>
+      .Fondo_Form{
+        background: url(IMG/Form_Adopciones.jpg); 
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body style="padding-top: 4rem !important;" class="min-vh-100 d-flex flex-column justify-content-between Fondo_Form">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ml-auto" href="#">   
+                <div class="d-flex justify-content-center align-items-center m-0">
+                <img src="IMG/Logo.ico" width="40" alt="Logo" class="m-0">
+                <p class="text-light m-0 ms-2">Petland</p>
+                </div>
+                </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-sm-0 ">
+              
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+    
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicos
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Valentino_tablas.html">Estet. animales&nbsp; <i class="fas fa-cat m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                  <li><a class="dropdown-item" href="Valentino_citas.html">Citas Estet.&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Jois_servicios.html">Especialidades&nbsp; <i class="fas fa-syringe m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                  <li><a class="dropdown-item" href="Jois_formulario.html">Citas especiali.&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Axel_Adopciones_Prin.html">Adopciones.&nbsp; <i class="fas fa-paw m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                  <li><a class="dropdown-item" href="Axel_form_mascota.html">Admin adop.&nbsp; <i class="fas fa-clipboard-list m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Urgencias
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Fredy_Pacientes_Urgencia.html">Urg. animales&nbsp; <i class="fas fa-briefcase-medical m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                  <li><a class="dropdown-item" href="Fredy_Urgencia.html">Citas urg.&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Fredy_Urgencias_admin.html">Admin urg.&nbsp; <i class="fas fa-clipboard-list m-0" style="color: rgb(248, 247, 247);"></i></a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Acerca de
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Victor_veterinarios.html">Nst. personal&nbsp; <i class="fas fa-user-md m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                  <li><a class="dropdown-item" href="Victor_veterinarios_form.html">Reg. personal&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Angel_Tablas.html">Nst. usuarios&nbsp; <i class="fas fa-users m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                  <li><a class="dropdown-item" href="Angel_Registro.html">Reg. usuarios&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- .- Navbar -->
+
+    <div class="container-xl  pt-5 pb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header pt-4 pb-4 text-center d-flex justify-content-between align-items-center">            
+                        <h1> Lista de Mascotas </h1>
+                        <div>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#md-add-mascota" onclick="Reset()">Agregar Mascota</button>
+                        <a href="Axel_personas.html" class="btn btn-primary ms-4">Ver solicitudes</a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+
+                        <table  class="table table-striped table-hover table-bordered text-center ">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Especie</th>
+                                    <th>Edad</th>
+                                    <th>Vacuna</th>
+                                    <th>Descripción</th>
+                                    <th>Link</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tb-mascota">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Add Mascota -->
+    <div class="modal fade" id="md-add-mascota" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Agregar Mascota</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <form id="form-add-mascota">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="ia-nom-mascota">Nombre de la Mascota:</label>
+                            <input type="text" id="ia-nom-mascota" name="ia-nom-mascota" class="form-control" maxlength="100" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="ia-especie">Especie:</label>
+                            <select id="ia-especie" name="ia-especie" class="form-control" required>
+                                <option value="" selected disabled>.:: Seleccionar ::.</option>
+                                <option value="Can">Can</option>
+                                <option value="Felino">Felino</option>
+                            </select>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="ia-edad">Edad:</label>
+                                <input type="number" id="ia-edad" name="ia-edad" class="form-control" required>
+                            </div>
+
+                            <div class="col">
+                                <label for="ia-vacuna">Vacunas:</label>
+                                <input type="number" id="ia-vacuna" name="ia-vacuna" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="ia-desc">Descripción:</label>
+                            <textarea id="ia-desc" name="ia-desc" class="form-control" style="max-height: 100px" required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="ia-link">Link de la Imagen:</label>
+                            <textarea id="ia-link" name="ia-link" class="form-control" style="max-height: 100px" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  
+    <div class="container-xxl">
+      <footer class="text-center row  bg-light " >
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+         <strong>Copyright © 2021</strong> Todos los derechos reservados para el Grupo 4
+        </div>
+      </footer>
+    </div>
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- Custom js -->
+    <script src="js/Axel/form_mascota.js"></script>
+</body>
+</html>

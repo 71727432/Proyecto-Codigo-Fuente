@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+   <meta charset='UTF-8'>
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- DATE-PICKER -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <!-- jQuery -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <!-- BoostrapJS_01 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We' crossorigin='anonymous'>
+    <!--BoostrapJS_02-->
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>
+    <!--iconos-->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous'>
+   <!--font-Family-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <!--Poppis-->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!--Relaway-->
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+   <!--Josefin-->
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+   <!--Slab-->
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap" rel="stylesheet">
+
+   <title>PetLand - Registros urgencias</title>
+   <link rel="icon" href="IMG/Logo_Web.png">
+   
+    <style>
+      .carousel-caption {
+    position: absolute; 
+    right: 0% !important;
+    top: 0px !important; /* Cambiar bottom por top y los píxeles que necesites */
+    left: 0% !important;
+    z-index: 0;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    color: #fff;
+    text-align: center;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    background: #082f779d;
+}
+
+
+
+  .cotenedor_reg{
+    padding-bottom: 2rem solid transparent ;
+    
+     border-image: linear-gradient(to right, #6b11cb7e, #2574fc70) 1 !important;
+  }
+
+  .Fondo{
+    background-color: white;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 23em !important;
+    background-attachment: fixed;
+  }
+
+
+
+  #Slider_01{
+    background-image: url(IMG/Animal1.jpg);
+  }
+
+  #Slider_02{
+    background-image: url(IMG/Animal_2.jpg);
+  }
+
+  #Slider_03{
+    background-image: url(IMG/Animal3.jpg);
+  }
+
+  .Fondo_Urgencias{
+    background-image: linear-gradient(to right, #0000007e 0%, #00000070 100%), url(IMG/Fondo_Urgencias.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .Form_TxT{
+    padding-top: 0.9rem;
+    padding-bottom: 0.6rem;
+    border: 1.8px solid #dbdbdb !important;
+    color: rgb(0, 0, 0) !important;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);}
+
+  .Form_TxT::placeholder{
+    color: rgb(122, 121, 121);
+  }
+
+  .Form_TxT:focus{
+    box-shadow: none !important;
+    border: 2px solid #5a94da !important;
+  }
+
+  .Form_Exito{
+    padding-top: 0.9rem;
+    padding-bottom: 0.6rem;
+    border: 1.8px solid #258759 !important;
+    color: rgb(13, 121, 40) !important;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  }
+
+  .Form_Exito::placeholder{
+    color: #49b174;
+  }
+
+  .Form_Error{
+    padding-top: 0.9rem;
+    padding-bottom: 0.6rem;
+    border: 1.8px solid #db4958 !important;
+    color: rgb(0, 0, 0) !important;
+  }
+
+  .Form_Error:focus{
+    box-shadow: 0 0 0 0.2rem rgb(207, 178, 178) !important;
+  }
+
+  .Form_Error::placeholder{
+    color: rgb(236, 106, 106) !important;
+  }
+
+  .icono_Error{
+    color: rgb(236, 106, 106) !important;
+  }
+
+
+  .Form_Resp{
+    box-shadow: none;
+  }
+
+  .Form_Resp{
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%)
+  }
+
+  .Sub_Form{
+    background: #7b7b7c !important;
+    border: none;
+    color: white;
+  }
+
+
+  .fondo_Form{
+background: #eeecec
+;
+  }
+
+
+    </style>
+</head>
+
+<body style="padding-top: 4rem;" class="Fondo_Urgencias">
+
+
+<!--Incio del menu-->
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+      <a class="navbar-brand ml-auto" href="#">   
+          <div class="d-flex justify-content-center align-items-center m-0">
+          <img src="IMG/Logo.ico" width="40" alt="Logo" class="m-0">
+          <p class="text-light m-0 ms-2">Petland</p>
+          </div>
+          </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-sm-0 ">
+        
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+        </li>
+
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Servicos
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Valentino_tablas.html">Estet. animales&nbsp; <i class="fas fa-cat m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+            <li><a class="dropdown-item" href="Valentino_citas.html">Citas Estet.&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Jois_servicios.html">Especialidades&nbsp; <i class="fas fa-syringe m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+            <li><a class="dropdown-item" href="Jois_formulario.html">Citas especiali.&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Axel_Adopciones_Prin.html">Adopciones.&nbsp; <i class="fas fa-paw m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+            <li><a class="dropdown-item" href="Axel_form_mascota.html">Admin adop.&nbsp; <i class="fas fa-clipboard-list m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link active  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Urgencias
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Fredy_Pacientes_Urgencia.html">Urg. animales&nbsp; <i class="fas fa-briefcase-medical m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+            <li><a class="dropdown-item" href="Fredy_Urgencia.html">Citas urg.&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Fredy_Urgencias_admin.html">Admin urg.&nbsp; <i class="fas fa-clipboard-list m-0" style="color: rgb(248, 247, 247);"></i></a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Acerca de
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Victor_veterinarios.html">Nst. personal&nbsp; <i class="fas fa-user-md m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+            <li><a class="dropdown-item" href="Victor_veterinarios_form.html">Reg. personal&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Angel_Tablas.html">Nst. usuarios&nbsp; <i class="fas fa-users m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+            <li><a class="dropdown-item" href="Angel_Registro.html">Reg. usuarios&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-xxl">
+
+
+
+
+
+<div class="w-75 m-auto pt-5 pb-5">
+    <div class="d-flex flex-column cotenedor_reg" >
+        <div class="col-12 col-lg-12 w-100 text-dark fondo_Form" style="border-radius: 1rem; overflow: hidden; ">
+         
+         <!--Carrusel-->
+          <div id="carouselExampleIndicators" class="carousel slide bg-primary" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+
+                <div class="d-block w-100 h-100 Fondo" id="Slider_01">                  
+                </div>
+                
+                <div class="carousel-caption d-none d-md-block text-light">
+                  <h1 class="mb-4" style="font-family: 'Poppins', sans-serif;"><span id="Estado_01">Registrate</span> y tendras:</h1>
+                  <p style="width: 50%; font-family: 'Josefin Sans', sans-serif; font-weight: 300;">A los mejores medicos veterinarios simpre a su disposicion, esto con
+                    simple registro para que su mascota pueda ser atendido lo mas pronto posible y se tenga un
+                    historial medico para esta.
+                  </p>
+                </div>
+
+              </div>
+              <div class="carousel-item h-100">
+                
+                <div class="d-block w-100 h-100 Fondo" id="Slider_02"></div>
+
+                <div class="carousel-caption d-none d-md-block text-light">
+                  <h1 class="mb-4" style="font-family: 'Poppins', sans-serif;"><span id="Estado_02">Registrate</span> y tendras:</h1>
+                  <p style="width: 50%; font-family: 'Josefin Sans', sans-serif; font-weight: 300;">
+                    una manera mas sencilla de acceder a los servicios de atencion medica, de manera mas eficiente
+                    con una cuenta que respalda la evolucion de tu mascota y su mejora de manera mas clara.
+                  </p>
+                </div>
+
+              </div>
+              <div class="carousel-item h-100">       
+
+                <div class="carousel-caption d-none d-md-block text-light">
+                  <h1 class="mb-4" style="font-family: 'Poppins', sans-serif;"><span id="Estado_03">Registrate</span> y tendras:</h1>
+                  <p style="width: 50%; font-family: 'Josefin Sans', sans-serif; font-weight: 300;">Una vision mas clara de lo que sucede con
+                    tu mascota y de ese modo estar mas al pendiente, si ocurre un imprevisto o si tu mascota necesita algun medicamento de manera urgente.
+                  </p>
+                </div>
+
+                <div class="d-block w-100 h-100 Fondo" id="Slider_03"></div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+              <form action="" method="POST" class="Form_Prue w-100 pt-5 mt-4 pb-5" id="frm_Registro">
+                  <div class="form-row d-flex justify-content-lg-between mb-5 me-5 ms-5">
+                    <div class="form-group col-12 col-lg-5 ">
+
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                      <label for="Usuario" class=" text-dark Usuario_label">Ingrese su usuario: <span class="text-danger">*</span></label>
+                      <i class="fas fa-exclamation-circle ms-auto icono_Error d-none Usuario_icon" style="font-size: 1.3em;"></i>
+                      <i class="fas fa-check text-success d-none Usuario_icon_Check"></i>  
+                    </div>
+                     
+                      <input type="text" class="form-control Form_TxT Usuario_input" placeholder="Jhon_12"   id="Usuario" name="Usuario">        
+                      <div class="invalid-feedback Usuario_alerta">
+                        El campo usuario debe tener almenos 5 caracteres y usar almenos una mayuscula
+                      </div>
+                      <div class="invalid-feedback Usuario_alerta_check text-success">
+                        Felicidades, este campo se lleno correctamente y ahora puedes seguir con tu registro
+                      </div>
+
+                    </div>
+                    <div class="form-group col-12 col-lg-5">
+
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <label for="contraseña" class="text-dark contraseña_label">Ingrese su contraseña: <span class="text-danger">*</span></label>                        
+                        <i class="fas fa-exclamation-circle ms-auto icono_Error d-none contraseña_icon" style="font-size: 1.3em;"></i>
+                        <i class="fas fa-check text-success d-none contraseña_icon_Check"></i>  
+                      </div>
+
+
+                      <input id="contraseña" type="password" class="form-control Form_TxT contraseña_input" name="contraseña" placeholder="Jhon_12">
+                      <div class="invalid-feedback contraseña_alerta">
+                        El campo de contraseña puede estar vacio o no contener 8 caracteres con mayusculas, minusculas o simbolos,                      </div>
+                        <div class="invalid-feedback contraseña_alerta_check text-success">
+                          Felicidades, este campo se lleno correctamente y ahora puedes seguir con tu registro
+                         </div>
+                      </div>
+                  </div>
+
+
+                  <div class="form-row d-flex justify-content-lg-between mb-5 me-5 ms-5">
+                    <div class="form-group col-12 col-lg-5">
+
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <label for="direccion" class="text-dark direccion_label">Ingrese su direccion: <span class="text-danger">*</span></label>                        
+                        <i class="fas fa-exclamation-circle ms-auto icono_Error d-none direccion_icon" style="font-size: 1.3em;"></i>
+                        <i class="fas fa-check text-success d-none direccion_icon_Check"></i>  
+                      </div>
+
+                        <input type="text" class="form-control Form_TxT direccion_input" id="direccion" name="direccion" placeholder="Mz.z Lt.19 Belen">
+                          <div class="invalid-feedback direccion_alerta">
+                            La direccion esta vacia o no tiene mayusculas, minusculas y numeros, para poder preceder    
+                          </div>
+                          <div class="invalid-feedback direccion_alerta_check text-success">
+                            Felicidades, este campo se lleno correctamente y ahora puedes seguir con tu registro
+                           </div>
+                      </div>
+                    
+                  
+                    
+                    <div class="form-group col-12 col-lg-5">
+                             
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <label for="Fecha_Cita" class="text-dark Fecha_Cita_label">Dia de ingreso: <span class="text-danger">*</span></label>       
+                        <i class="fas fa-exclamation-circle ms-auto icono_Error d-none Fecha_Cita_icon" style="font-size: 1.3em;"></i>
+                        <i class="fas fa-check text-success d-none Fecha_Cita_icon_Check"></i>  
+                      </div>
+
+                      <input type="text" id="Fecha_Cita" class="form-control Form_TxT Fecha_Cita_input" name="Fecha_De_ingreso" style="color: rgb(122, 121, 121)  !important;">                                            
+                      <div class="invalid-feedback Fecha_Cita_alerta">
+                        El campo que indica el ingreso se encuentra vacio, haciendo imposinle separar una cita.    
+                      </div>
+                      <div class="invalid-feedback Fecha_Cita_alerta_check  text-success">
+                        Felicidades, este campo se lleno correctamente y ahora puedes seguir con tu registro
+                       </div>
+                    </div>
+                  </div>
+
+
+
+  
+
+
+                  <div class="form-row d-flex justify-content-lg-between mb-5 me-5 ms-5">
+                    <div class="form-group col-12 col-lg-5">
+
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <label for="Especie" class="text-dark Especie_label">Especie de su mascota: <span class="text-danger">*</span></label>
+                        <i class="fas fa-exclamation-circle ms-auto icono_Error d-none Especie_icon" style="font-size: 1.3em;"></i>
+                        <i class="fas fa-check text-success d-none Especie_icon_Check"></i>  
+                      </div>
+
+                      <div class="input-group-prepend d-flex Cont_Resp">
+                      <select class="form-control Form_TxT Form_Resp Especie_input" style="color: rgb(122, 121, 121) !important; border-bottom-right-radius: 0px !important; border-top-right-radius: 0px !important; border-right: none !important" id="Especie" name="Especie"> 
+                          <option value="Coloque la especie...">Coloque la especie </option>
+                          <option value="Perro">Perro</option>
+                          <option value="Gato" id="Activador">Gato</option>
+                          <option value="Hamster">Hamster</option>
+                          <option value="Pez">Pez</option>
+                          <option value="Lagarto">Lagarto</option>
+                          <option value="Iguana">Iguana</option>
+                          <option value="Ave">Ave</option>
+                          <option value="Conejo">Conejo</option>
+                          <option value="Animal exotico">Animal exotico</option>
+                      </select>
+                        <button onclick="Activar(10)" class="btn btn-outline-primary Especie_Button" type="button" id="B" style="cursor: pointer; border-bottom-left-radius: 0px !important; border-top-left-radius: 0px !important; outline: none !important; box-shadow: 0px 0px 0px 0px !important;"><i class="fas fa-angle-down"></i></button>
+                    </div>
+                    <div class="invalid-feedback Especie_alerta">
+                     No a seleccionado la especie de su mascota, por lo que no se puede separar la cita.   
+                    </div>
+                    <div class="invalid-feedback Especie_alerta_check text-success">
+                      Felicidades, este campo se lleno correctamente y ahora puedes seguir con tu registro
+                     </div>  
+                  </div>
+
+                    <div class="form-group col-12 col-lg-5">
+
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <label for="Telefono" class="text-dark Telefono_label">Ingrese su telefono: <span class="text-danger">*</span></label>
+                        <i class="fas fa-exclamation-circle ms-auto icono_Error d-none Telefono_icon" style="font-size: 1.3em;"></i>
+                        <i class="fas fa-check text-success d-none Telefono_icon_Check"></i>  
+                      </div>
+
+                      <div class="input-group-prepend d-flex Cont_Resp">
+                        <label class="btn btn-outline-primary d-flex justify-content-center align-items-center Telefono_button" type="button" style="border-bottom-right-radius: 0px !important; border-top-right-radius: 0px !important; z-index: 2;" for="Telefono">51</label>                                                              
+                        <input type="number" class="form-control Form_TxT Form_Resp Telefono_input" id="Telefono" name="Telefono" placeholder="923 423 920" style="border-bottom-left-radius: 0px !important; border-top-left-radius: 0px !important; border-left: none !important">                        
+                    </div>
+                    <div class="invalid-feedback Telefono_alerta">
+                      No a registrado un numero de telefono o no hay sufientes numeros para poder registrarlo.   
+                     </div>
+                     <div class="invalid-feedback Telefono_alerta_check text-success">
+                      Felicidades, este campo se lleno correctamente y ahora puedes seguir con tu registro
+                     </div>
+                    </div>
+
+
+
+
+                  </div>
+                  <div class="form-row d-flex justify-content-lg-between mb-5 me-5 ms-5">
+                    <div class="form-group col-12 col-lg-5">
+                        
+                      <div class="d-flex justify-content-between align-items-center mb-3">
+                        <label for="Edad" class="text-dark Edad_label">Edad de su mascota: <span class="text-danger">*</span></label>
+                        <i class="fas fa-exclamation-circle ms-auto icono_Error d-none Edad_icon" style="font-size: 1.3em;"></i>
+                        <i class="fas fa-check text-success d-none Edad_icon_Check"></i>  
+                      </div>
+                      
+                      <div class="input-group-prepend d-flex Cont_Resp">                          
+                      <input type="number" class="form-control Form_TxT Form_Resp Edad_input" style="z-index: 2; border-bottom-right-radius: 0px !important; border-top-right-radius: 0px !important;  border-right: none !important" id="Edad" name="Edad" placeholder="1">
+                              <label class="btn btn-outline-primary d-flex justify-content-center align-items-center Edad_button" onclick="Acitvar_2(4)" style="cursor: pointer; user-select: none; border-bottom-left-radius: 0px !important; border-top-left-radius: 0px !important;" for="" id="Tiempo">Año</label>
+                        </div>
+                        <div class="invalid-feedback Edad_alerta">
+                          No hay datos en el campo o coloco un numero exagerado para la edad de su mascota.  
+                         </div>
+                         <div class="invalid-feedback Edad_alerta_check text-success">
+                          Felicidades, este campo se lleno correctamente y ahora puedes seguir con tu registro
+                         </div>
+                        </div>
+
+                        <div class="form-group col-12 col-lg-5">
+                            
+                          <div class="d-flex justify-content-between align-items-center mb-3">
+                            <label for="Nombre_msc" class="text-dark Nombre_msc_label">Nombre de su mascota: <span class="text-danger">*</span></label>
+                            <i class="fas fa-exclamation-circle ms-auto icono_Error d-none Nombre_msc_icon" style="font-size: 1.3em;"></i>
+                            <i class="fas fa-check text-success d-none Nombre_msc_icon_Check"></i>  
+                          </div>
+                          
+                          <input type="text" class="form-control Form_TxT Nombre_msc_input" id="Nombre_msc" name="Nombre_msc" placeholder="Atun">
+                            <div class="invalid-feedback Nombre_msc_alerta">
+                              El campo dirigido para el nombre de su masconta se encuentra vacio o no tienes sufientes caracteres. 
+                             </div>
+                             <div class="invalid-feedback Nombre_msc_alerta_check text-success">
+                              Felicidades, este campo se lleno correctamente y ahora puedes seguir con tu registro
+                             </div>
+                          </div>
+                  </div>
+
+                  <div class="form-group me-5 ms-5 pb-4">
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <label for="Cituacion" class="Cituacion_label">Describa la situacion de su mascota:</label>
+                      <i class="fas fa-exclamation-circle ms-auto icono_Error d-none Cituacion_icon" style="font-size: 1.3em;"></i>
+                      <i class="fas fa-check text-success d-none Cituacion_icon_Check"></i>
+                      </div>
+                    
+                    <textarea placeholder="¿Cuentenos que le paso?" id="Cituacion" class="col-lg-12 form-control Form_TxT Cituacion_input" style="min-height: 14em;"></textarea>
+                    <div class="invalid-feedback  mt-4 Cituacion_alerta">
+                      El campo de cituacion se encuentra vacio no tiene suficientes palabras que describan de manera correcta la cituacion de su mascota, por lo que no se puede registrar esta informacion.
+                     </div>
+                     <div class="invalid-feedback Cituacion_alerta_check text-success">
+                      Felicidades, este campo se lleno correctamente y ahora puedes seguir con tu registro
+                     </div>
+                  </div>
+                  
+              </form>
+
+              <div class="d-flex ps-5 "  style="padding-top: 2.5rem; padding-bottom: 2rem; background: #0b3b94de;">                      
+                <a href="Fredy_Pacientes_Urgencia.html" class="btn btn-outline-light  me-4 pe-4 ps-4" style="padding-top: 0.7rem; padding-bottom: 0.8rem; border-radius: 1.5rem !important;">Cancelar</a>
+                <button class="btn btn-outline-light pe-4 ps-4" style="padding-top: 0.7rem; padding-bottom: 0.8rem; border-radius: 1.5rem !important;" onclick="Enviar_Formu()" id="Btn_Enviar_frm">Enviar registro</button>        
+                <i class="fas fa-paw ms-5" style="transform: rotate(60deg); font-size: 1.7rem; color: rgb(255, 255, 255)"></i>
+                <i class="fas fa-paw ms-5" style="transform: rotate(60deg); font-size: 1.2rem; color: rgb(255, 255, 255)"></i>
+                  
+            </div>
+        </div>
+    </div>
+  </div>
+  
+</div>
+
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js' integrity='sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj' crossorigin='anonymous'></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+
+var Procesar_Url = window.location.search
+    var Params = new URLSearchParams(Procesar_Url)
+    var Indice_Rg = Params.get("Perfil")
+
+
+    if(Indice_Rg != null && Indice_Rg != ""){
+    $("#Btn_Enviar_frm").html("Actualizar info")
+    $("#Estado_01").html("Actualiza")
+    $("#Estado_02").html("Actualiza")
+    $("#Estado_03").html("Actualiza")
+    var Obtener_Inf_Ant = JSON.parse(localStorage.getItem("Tablaregistrostorage"))
+    var Sacar_Info_Ante = JSON.parse(Obtener_Inf_Ant[Indice_Rg])
+     document.getElementById("Usuario").value =  Sacar_Info_Ante.Usuario
+     document.getElementById("contraseña").value = Sacar_Info_Ante.contraseña
+     document.getElementById("direccion").value = Sacar_Info_Ante.direccion
+     fecha_min = Sacar_Info_Ante.Fecha_Cita
+     document.getElementById("Especie").value = Sacar_Info_Ante.Especie
+     document.getElementById("Telefono").value = Sacar_Info_Ante.Telefono
+     var P_Numero_Edad = Sacar_Info_Ante.edad_mascota.split(" ")
+     var Numero_Edad =  P_Numero_Edad[0]
+     Fecha_Edad = P_Numero_Edad[1]
+     var Edad_N = parseInt(Numero_Edad)
+     document.getElementById("Edad").value = Edad_N
+     document.getElementById("Nombre_msc").value = Sacar_Info_Ante.Nombre_msc
+     document.getElementById("Cituacion").value = Sacar_Info_Ante.Cituacion
+     var Usuario = true
+      var Contraseña = true
+      var Direccion = true
+      var Ingrezo = true
+      var Especie_Masc = true
+      var Telefono = true
+      var Edad_Masc = true
+      var Nombre_Masc = true
+      var Cituacion = true
+     
+    }else{  
+
+      Fecha_Edad = ""
+
+      var Usuario = false
+      var Contraseña = false
+      var Direccion = false
+      var Ingrezo = false
+      var Especie_Masc = false
+      var Telefono = false
+      var Edad_Masc = false
+      var Nombre_Masc = false
+      var Cituacion = false
+
+
+    var fecha = new Date();
+    var fecha_min = new Date();
+    var dias = 5; // Número de días a agregar
+    fecha.setDate(fecha.getDate() + dias);
+}
+
+  $('input[name="Fecha_De_ingreso"]').daterangepicker({
+    singleDatePicker : true,
+    minDate: fecha_min, 
+    maxDate: fecha,      
+    locale: {
+      format: 'DD/MM/YYYY'
+    }
+  })
+
+
+
+  if(Fecha_Edad == ""){
+  var Inicio_02 = 0
+  Tiempo = "Año"
+  }else{
+    if(Fecha_Edad == "Años"){
+      var Inicio_02 = 0
+      Tiempo = "Años"
+      Acitvar_2()
+    }
+    if(Fecha_Edad == "Mes"){
+      var Inicio_02 = 1
+      Tiempo = "Mes"
+      Acitvar_2()
+    }
+    if(Fecha_Edad == "Meses"){
+      var Inicio_02 = 2
+      Tiempo = "Meses"
+      Acitvar_2()
+    }
+    if(Fecha_Edad == "Año"){
+      var Inicio_02 = 3
+      Tiempo = "Año"
+      Acitvar_2()
+    }
+  }
+
+    function Acitvar_2(Elemento_02){
+        var Fecha = document.getElementById("Tiempo")
+        Clicks_02 = Inicio_02 + 1
+        if(Clicks_02 == 1){
+            Fecha.innerHTML = "Años"
+            Tiempo = "Años"
+        }
+        if(Clicks_02 == 2){
+            Fecha.innerHTML = "Mes"
+            Tiempo = "Mes"
+        }
+        if(Clicks_02 == 3){
+            Fecha.innerHTML = "Meses"
+            Tiempo = "Meses"
+        }
+        if(Clicks_02 == 4){
+            Fecha.innerHTML = "Año"
+            Tiempo = "Año"
+        }
+
+        Inicio_02 = Inicio_02 + 1
+        if(Inicio_02 == 4){
+            Inicio_02 = 0
+        }
+        
+      }
+
+
+
+
+
+
+  const expresiones = {
+	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	password: /^.{8,12}$/, // 4 a 12 digitos.
+	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	telefono: /^\d{9,9}$/,// 7 a 14 numeros.
+  fecha: /^(0[1-9]|[1-2]\d|3[01])(\/)(0[1-9]|1[012])\2(\d{4})$/
+}
+
+
+
+  const Validar_Fomr = (element_cmp) =>{
+
+    function Reseteo(){
+      Label_Most = (`.${element_cmp.id}_label`)
+       Inputs_Most = (`.${element_cmp.id}_input`)  
+       Alerts_Most = (`.${element_cmp.id}_alerta`)  
+       Iconos = (`.${element_cmp.id}_icon`)  
+
+       Label_Most_Posi = (`.${element_cmp.id}_label`)
+       Alerts_Most_Posi = (`.${element_cmp.id}_alerta_check`)        
+       Check = (`.${element_cmp.id}_icon_Check`)
+       Inputs_Most_Posi = (`.${element_cmp.id}_input`)
+
+      $(Label_Most).removeClass("text-danger")
+      $(Inputs_Most).removeClass("Form_Error")
+      $(Alerts_Most).removeClass("d-block")
+      $(Iconos).addClass("d-none")
+
+      $(Alerts_Most_Posi).removeClass("d-block")
+      $(Check).addClass("d-none")
+      $(Inputs_Most_Posi).removeClass("Form_Exito")      
+      $(Label_Most_Posi).addClass("text-success")
+
+      $(Inputs_Most_Posi).addClass("Form_TxT")
+    }
+
+    /*Creo la funcion para mostrar lo errores*/
+    function Error(){
+
+      Reseteo()
+
+      //Desactivar estilos    
+      $(Label_Most).removeClass("text-dark")
+      $(Inputs_Most).removeClass("Form_TxT")
+      $(Iconos).removeClass("d-none")
+      //Nuevos estilos
+      $(Label_Most).addClass("text-danger")
+      $(Inputs_Most).addClass("Form_Error")
+      $(Alerts_Most).addClass("d-block")
+
+}
+
+
+function Exito(){
+
+      Reseteo()
+      $(Alerts_Most_Posi).addClass("d-block")
+      $(Check).addClass("d-block")
+      $(Inputs_Most_Posi).addClass("Form_Exito")
+      $(Label_Most_Posi).addClass("text-success")
+      //Quitar
+      $(Check).removeClass("d-none")
+      $(Inputs_Most_Posi).removeClass("Form_TxT")
+      $(Label_Most_Posi).removeClass("text-dark")
+}
+
+
+    switch(element_cmp.id){
+      case "Usuario":
+
+      if(element_cmp.value != "" || element_cmp.value.length > 6){
+      Exito()
+      Usuario = true
+
+    }else{
+      Error()
+      Usuario = false
+    }
+      break;
+      case "contraseña":
+      if(expresiones.password.test(element_cmp.value)){
+        Exito()
+        Contraseña = true
+      }else{
+        Error()
+        Contraseña = false
+      }
+
+      break;
+      case "direccion":
+      var Separacion_Direc = element_cmp.value.split(" ")
+      if(element_cmp.value != "" && Separacion_Direc.length > 3){
+        Exito()
+        Direccion = true
+      }else{
+      Error()
+      Direccion = false
+      }
+      
+      break;
+      case "Fecha_Cita":
+        if(expresiones.fecha.test(element_cmp.value)){
+          Exito()
+          Ingrezo = true
+        }else{
+      Error()
+          Ingrezo = false
+      }
+      break;
+      case "Especie":
+      if(element_cmp.value != "Coloque la especie..."){
+        $(".Especie_Button").removeClass("btn-outline-primary")
+        $(".Especie_Button").removeClass("btn-outline-danger")
+        $(".Especie_Button").addClass("btn-outline-success")
+        Exito()
+        Especie_Masc = true
+      }else{
+        Error()        
+        $(".Especie_Button").removeClass("btn-outline-primary")
+        $(".Especie_Button").addClass("btn-outline-danger")
+        Especie_Masc = false
+      }
+      break;
+      case "Telefono":
+      
+      if(expresiones.telefono.test(element_cmp.value)){
+        $(".Telefono_button").removeClass("btn-outline-primary")
+        $(".Telefono_button").removeClass("btn-outline-danger")
+        $(".Telefono_button").addClass("btn-outline-success")
+        Exito()
+        Telefono = true
+      }else{
+        Error()
+        $(".Telefono_button").removeClass("btn-outline-primary")
+        $(".Telefono_button").addClass("btn-outline-danger")
+        Telefono = false        
+      }
+      break;
+      
+      case "Edad":
+      if(element_cmp.value != "" && element_cmp.value <= 12){
+        $(".Edad_button").removeClass("btn-outline-primary")
+        $(".Edad_button").removeClass("btn-outline-danger")
+        $(".Edad_button").addClass("btn-outline-success")
+        Exito()
+        Edad_Masc = true
+      }else{
+        Error()
+        $(".Edad_button").removeClass("btn-outline-primary")
+        $(".Edad_button").addClass("btn-outline-danger")
+        Edad_Masc = false   
+      }
+      break;
+      case "Nombre_msc":
+      if(expresiones.nombre.test(element_cmp.value)){
+        Exito()
+        Nombre_Masc = true
+      }else{
+        Error()
+        Nombre_Masc = false
+      }
+      break;
+
+      case "Cituacion":
+      var Contar_P = element_cmp.value.split(" ");
+      if(element_cmp.value != "" && Contar_P.length > 20){
+        Exito()
+      Cituacion = true 
+      }else{
+        Error()
+      Cituacion = false
+      }
+
+      break;
+    }
+
+}
+
+
+function Enviar_Formu(){
+  var Comprovar = {
+    0: Usuario,
+    1: Contraseña,
+    2: Direccion,
+    3: Ingrezo,
+    4: Especie_Masc,
+    5: Telefono,
+    6: Edad_Masc,
+    7: Nombre_Masc,
+    8: Cituacion 
+  }
+
+var Proce_Insert = true
+
+for(const z in Comprovar){
+  if(Comprovar[z] == false){
+    Proce_Insert = false
+  }
+}
+
+if(Proce_Insert == true){
+  Guardar_Memoria()
+}else{
+  Swal.fire({
+      position: 'center',
+      icon: 'error',
+      title: `Al parecer el formulario no puede registrar su cita`,
+      text:  `Esto puede deberse a que los campos dentro del registro se encuentran vacios o con algunos errores al registrar. `,
+      showConfirmButton: true,
+      confirmButtonText: "Volver a intentar"
+    })
+}
+
+}
+
+
+var Formulario = document.querySelectorAll(".form-control")
+
+Formulario.forEach((e) => {
+  e.addEventListener('blur', () => {
+    Validar_Fomr(e)
+  })
+})
+
+/*Formulario.addEventListener('click', (e) => {  
+  if(e.target.tagName == "INPUT" ||  e.target.tagName == "TEXTAREA" ||  e.target.tagName == "SELECT"){    
+    
+    e.target.addEventListener('blur', () => {
+      Validar_Fomr(e)
+    })
+  } 
+})*/
+
+
+
+
+
+
+
+</script>
+<script src="Js/Fredy/Funcionalidad.js"></script>
+</body>

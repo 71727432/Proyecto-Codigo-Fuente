@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+   <meta charset='UTF-8'>
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- jQuery -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <!-- BoostrapJS_01 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We' crossorigin='anonymous'>
+    <!--iconos(FontAnswane)-->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous'>
+    <title>PetLand - Registro veterinarios</title>
+    <script src="Js/Victor/veterinarios.js" ></script>
+    
+    <link rel="icon" href="IMG/Logo_Web.png">
+    
+</head>
+<style>
+.Fondo{
+  background: url(IMG/Form_Vet.jpeg) 50% 50% no-repeat;
+  background-size: cover;
+}
+</style>
+<body style="padding-top: 3rem" class="Fondo">
+
+    <!--Menu-->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand ml-auto" href="#">   
+              <div class="d-flex justify-content-center align-items-center m-0">
+              <img src="IMG/Logo.ico" width="40" alt="Logo" class="m-0">
+              <p class="text-light m-0 ms-2">Petland</p>
+              </div>
+              </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-sm-0 ">
+            
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+  
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Servicos
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Valentino_tablas.html">Estet. animales&nbsp; <i class="fas fa-cat m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a class="dropdown-item" href="Valentino_citas.html">Citas Estet.&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Jois_servicios.html">Especialidades&nbsp; <i class="fas fa-syringe m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a class="dropdown-item" href="Jois_formulario.html">Citas especiali.&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Axel_Adopciones_Prin.html">Adopciones.&nbsp; <i class="fas fa-paw m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a class="dropdown-item" href="Axel_form_mascota.html">Admin adop.&nbsp; <i class="fas fa-clipboard-list m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+              </ul>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Urgencias
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Fredy_Pacientes_Urgencia.html">Urg. animales&nbsp; <i class="fas fa-briefcase-medical m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a class="dropdown-item" href="Fredy_Urgencia.html">Citas urg.&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Fredy_Urgencias_admin.html">Admin urg.&nbsp; <i class="fas fa-clipboard-list m-0" style="color: rgb(248, 247, 247);"></i></a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Acerca de
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Victor_veterinarios.html">Nst. personal&nbsp; <i class="fas fa-user-md m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a class="dropdown-item" href="Victor_veterinarios_form.html">Reg. personal&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Angel_Tablas.html">Nst. usuarios&nbsp; <i class="fas fa-users m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a class="dropdown-item" href="Angel_Registro.html">Reg. usuarios&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+      
+      <br>
+      <div class="container pt-5 pb-5">
+        <div class="card w-75 m-auto">
+            <div class="card-header text-center pe-4 ps-4"> <h5 class="mt-2 mb-2">FORMULARIO DE VETERINARIOS</h5> </div>
+            <div class="card-body pe-4 ps-4">
+                <form id="frmDoctor">
+                    <div class="form-group">
+                        <label for="txtIdDoctor" class="mb-2 mt-2">ID VETERINARIO</label>
+                        <input type="text" class="form-control" id="txtIdDoctor" 
+                        placeholder="Coloca tu ID" >
+                    </div>
+                    <div class="form-group">
+                        <label for="txtNombApellido" class="mb-2 mt-3">NOMBRES Y APELLIDOS</label>
+                        <input type="text" class="form-control"
+                         id="txtNombApellido" placeholder="Coloca tus nombres y apellidos"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtDni" class="mb-2 mt-3">DNI</label>
+                        <input type="text" class="form-control" id="txtDni" placeholder="Pon tu Documento Nacional de Identidad"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtEspecialidad" class="mb-2 mt-3" >ESPECIALIDAD</label>
+                        
+                        <select class="form-select" id="txtEspecialidad">
+                            <option>CIRUGIA</option>
+                            <option>BAÑO</option>
+                            <option >ESTETICA</option>
+                            <option>SOLO CONSULTA</option>
+                      </select>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="cboEstado" class="mb-2 mt-3">ESTADO</label>
+                        <select class="form-select" id="cboEstado">
+                            <option>ACTIVO</option>
+                            <option>INACTIVO</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card-footer pe-4 ps-4">
+                <button type="button" class="btn btn-success" 
+                    onclick="guardar()">GUARDAR</button>
+                <a href="Victor_veterinarios.html" class="btn btn-danger">CANCELAR</a>
+            </div>
+        </div>
+    </div>
+  </body>
+
+
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js'
+integrity='sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj'
+crossorigin='anonymous'></script>
+  <script>
+     Procesar = window.location.search
+     Params = new URLSearchParams(Procesar)
+     User = Params.get("Editar")
+    if(User != null && User != ""){
+      var ID_USER = parseInt(User)
+      var Array_Date = JSON.parse(localStorage.getItem("tablaDoctorStorage"))
+      var Datos_User = JSON.parse(Array_Date[ID_USER])
+      document.getElementById("txtIdDoctor").value = Datos_User.idDoctor
+      document.getElementById("txtNombApellido").value = Datos_User.nombApellido
+      document.getElementById("txtDni").value = Datos_User.dni
+      document.getElementById("txtEspecialidad").value = Datos_User.especialidad
+      document.getElementById("cboEstado").value = Datos_User.estado
+    }
+  </script>
+  </html>
+    

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG/Logo_Web.png">
+
+    <title>PetLand - Adopciones felinos</title>
+    <link rel="icon" href="IMG/Logo_Web.png">
+
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<style>
+    .Fondo_Animal{
+      background: url(IMG/Fondo_Modal.jpg);
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-position: 50% 50%;
+    }
+
+    .Fondo_Gatos{
+      background-image: linear-gradient(to right, #ffffff94 0%, #f8f8f89a 100%), url(IMG/Fondo_Adopcion_Gato.jpg);
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+</style>
+
+<body style="padding-top: 4rem !important;" class="min-vh-100 d-flex flex-column justify-content-lg-between Fondo_Gatos">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand ml-auto" href="#">   
+              <div class="d-flex justify-content-center align-items-center m-0">
+              <img src="IMG/Logo.ico" width="40" alt="Logo" class="m-0">
+              <p class="text-light m-0 ms-2">Petland</p>
+              </div>
+              </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-sm-0 ">
+            
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+  
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Servicos
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Valentino_tablas.html">Estet. animales&nbsp; <i class="fas fa-cat m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a class="dropdown-item" href="Valentino_citas.html">Citas Estet.&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Jois_servicios.html">Especialidades&nbsp; <i class="fas fa-syringe m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a class="dropdown-item" href="Jois_formulario.html">Citas especiali.&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Axel_Adopciones_Prin.html">Adopciones.&nbsp; <i class="fas fa-paw m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a class="dropdown-item" href="Axel_form_mascota.html">Admin adop.&nbsp; <i class="fas fa-clipboard-list m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+              </ul>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Urgencias
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Fredy_Pacientes_Urgencia.html">Urg. animales&nbsp; <i class="fas fa-briefcase-medical m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a class="dropdown-item" href="Fredy_Urgencia.html">Citas urg.&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Fredy_Urgencias_admin.html">Admin urg.&nbsp; <i class="fas fa-clipboard-list m-0" style="color: rgb(248, 247, 247);"></i></a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Acerca de
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end text-center" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Victor_veterinarios.html">Nst. personal&nbsp; <i class="fas fa-user-md m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a class="dropdown-item" href="Victor_veterinarios_form.html">Reg. personal&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Angel_Tablas.html">Nst. usuarios&nbsp; <i class="fas fa-users m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a class="dropdown-item" href="Angel_Registro.html">Reg. usuarios&nbsp; <i class="fas fa-plus m-0" style="color: rgb(255, 255, 255);"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- .- Navbar -->
+    <div class="container p-3 mb-5 pb-5">
+      <h1 class="d-table m-auto mt-5 pb-4 text-dark">LISTA DE ADOPCIONES <hr size="5" style="width: 80%; background: black;" class="m-auto mt-3"></h1>
+      <div class="container mt-5 pb-4">
+          <div class="d-flex justify-content-between align-items-center flex-wrap pb-5">
+      <h3 class="pt-4 pb-3">Todos los felinos en adopcion:</h3>
+      <div class="w-25">
+      <select class="form-select" onchange="Cambiar_Masc(this)">
+        <option value="Todas las mascotas">Todas las mascotas</option>
+        <option value="Felinos de mascota" selected>Felinos de mascota</option>
+        <option value="Perros de mascota">Perros de mascota</option>
+      </select>
+      </div>
+          </div>
+        <div id="row-mascotas" class="row row-cols-sm-1 row-cols-lg-4 g-4"></div>
+    </div>
+
+    <!-- Modal Add Mascota -->
+    <div class="modal fade" id="md-adoptar" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <form id="form-adoptar">
+                  <div class="modal-body pb-0 pe-4 ps-4">
+                      <div class="mt-0 mb-5">
+  
+                        <div id="img-mascota" class="w-100 d-flex justify-content-center align-items-center pt-3 pb-4 Fondo_Animal">
+                        </div>
+  
+                      <hr>
+  
+                      <div class="mt-3 mb-3 d-flex justify-content-evenly">
+                          
+                              <p class="m-0"><b>Especie:&nbsp;<span id="span-especie"></span></b></p>
+                              <p class="m-0"><b>Edad:&nbsp; <span id="span-edad"></span></b></p>
+                              <p class="m-0"><b>Descripción:&nbsp;<span id="span-desc"></span></b></p>
+                          
+                      </div>
+  
+                      <hr>
+  
+                      <div class="mb-5 mt-5">
+                          <h5>Datos Personales para la adopción:</h5>
+                      </div>
+  
+                      <div class="mb-4">
+                          <label for="ia-nombre" class="mb-3">Nombre Completo:</label>
+                          <input type="text" id="ia-nombre" name="ia-nombre" class="form-control" placeholder="Jhon Doe" required>
+                      </div>
+  
+                      <div class="row mb-4">
+                          <div class="col">
+                              <label for="ia-correo" class="mb-3">Correo:</label>
+                              <input type="email" id="ia-correo" name="ia-correo" class="form-control" placeholder="example@gmail.com" required>
+                          </div>
+  
+                          <div class="col">
+                              <label for="ia-telf" class="mb-3">Teléfono:</label>
+                              <input type="tel" id="ia-telf" name="ia-telf" class="form-control" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" placeholder="943435943" required>
+                          </div>
+                      </div>
+  
+                      <div class="mb-3">
+                          <label for="ia-dir" class="mb-3">Mensaje:</label>
+                          <textarea id="ia-dir" name="ia-dir" class="form-control" style="height: 35vh !important; max-height: 220px !important;" placeholder="Quiera adoptar a Wilson, por los siguientes motivos"  required></textarea>
+                      </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="Cerrar_Modal">Cancelar</button>
+                      <button type="submit" class="btn btn-success">Guardar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container-xxl">
+      <footer class="text-center row  bg-light " >
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+         <strong>Copyright © 2021</strong> Todos los derechos reservados para el Grupo 4
+        </div>
+      </footer>
+    </div>
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function getInfoMascota (id) {
+          var dataMascota = JSON.parse(localStorage.getItem("dataMascotasStorage"))
+            var item = JSON.parse(dataMascota[id])
+
+            document.getElementsByClassName("modal-title")[0].innerHTML = "Adoptar a " + item.nom_mascota;
+            document.getElementById("img-mascota").innerHTML = `<img src="${item.link}" class="w-50">`;
+            document.getElementById("span-especie").innerHTML = item.especie;
+            document.getElementById("span-edad").innerHTML = item.edad;
+            document.getElementById("span-desc").innerHTML = item.descripcion;
+        }
+
+        function Cambiar_Masc(element){
+        if(element.value == "Felinos de mascota"){
+          window.location.replace("Axel_Adopcion_felinos.html")
+        }
+        if(element.value == "Perros de mascota"){
+          window.location.replace("Axel_Adopcion_canes.html")
+        }
+        if(element.value == "Todas las mascotas"){
+          window.location.replace("Axel_Adopciones_Prin.html")
+        }
+        }
+
+    </script>
+
+    <!-- Custom js -->
+    <script src="Js/Axel/felinos.js"></script>
+</body>
+</html>
